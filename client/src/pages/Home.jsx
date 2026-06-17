@@ -87,7 +87,7 @@ export default function Home(){
   }, [statsVisible, prefersReducedMotion, targets])
 
 
-  const whatsappNumber = '9640400030'
+  const whatsappNumber = '+919640400030'
   const whatsappHref = `https://wa.me/${whatsappNumber}`
 
   return (
