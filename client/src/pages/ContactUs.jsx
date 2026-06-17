@@ -3,7 +3,7 @@ import { FaInstagram, FaEnvelope, FaWhatsapp } from 'react-icons/fa'
 
 
 export default function ContactUs() {
-  const whatsappNumber = '9640400030'
+  const whatsappNumber = '+919640400030'
   const whatsappText = encodeURIComponent('Hi, I would like to know more about PVC/WPC products.')
 
   return (
