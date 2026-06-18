@@ -293,10 +293,32 @@ nav a{margin-left:12px; transition: all 220ms cubic-bezier(0.34, 1.56, 0.64, 1);
 
 
 .project-list{display:grid; grid-template-columns: repeat(auto-fit,minmax(320px,1fr)); gap:18px}
+
+/* Projects video list should not get overlapped by large banner overlay text */
+.projects-page{position:relative;}
+
 .project{background: linear-gradient(135deg, rgba(0,217,255,0.05), rgba(120,58,237,0.03)); border: 1px solid rgba(0,217,255,0.1); padding:14px; border-radius:12px; display:flex; gap:12px; align-items:center; transition: all 300ms cubic-bezier(0.34, 1.56, 0.64, 1)}
 .project:hover{transform: translateX(6px); box-shadow: 0 12px 32px rgba(0,217,255,0.15); border-color: rgba(0,217,255,0.25)}
 
 .project img{width:140px; height:100px; object-fit:cover; border-radius:8px}
+
+.project--video .project-media--video{
+  width: 240px;
+  height: 160px;
+  border-radius: 8px;
+  overflow: hidden;
+  flex: 0 0 auto;
+  border: 1px solid rgba(15,23,42,0.10);
+  background: rgba(255,255,255,0.35);
+}
+
+.project--video video{
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
 
 /* Reveal utility for elements that should come from bottom to top */
 .reveal-up{transform: translateY(24px); opacity:0; transition: transform 520ms cubic-bezier(0.34,1.56,0.64,1), opacity 420ms ease-out}
