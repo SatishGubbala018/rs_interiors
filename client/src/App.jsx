@@ -32,7 +32,7 @@ export default function App() {
 
           <div className="footer-col">
             <div className="footer-heading">Contact Us</div>
-<a className="footer-link" href="tel:9640400030">Mobile: 9640400030</a>
+<a className="footer-link" href="tel:+919640400030">Mobile: +919640400030</a>
             <a className="footer-link" href="mailto:info@wpvcdesigns.com">Email: info@wpvcdesigns.com</a>
             <a className="footer-link" href="/contact">Quick message</a>
           </div>
