@@ -27,13 +27,13 @@ export default function ContactUs() {
 
         <a
           className="contact-option contact-option--gmail"
-          href="mailto:info@wpvcdesigns.com?subject=Contact%20from%20RS%20Interiors&body=Hi%20team%2C%0A%0AI%27d%20like%20to%20know%20more%20about%20your%20PVC%2FWPC%20products.%0A%0AName%3A%20%0APhone%3A%20"
+          href="mailto:rsrsinteriorsdesign@gmail.com?subject=Contact%20from%20RS%20Interiors&body=Hi%20team%2C%0A%0AI%27d%20like%20to%20know%20more%20about%20your%20PVC%2FWPC%20products.%0A%0AName%3A%20%0APhone%3A%20"
         >
           <div className="contact-option__icon" aria-hidden="true">
             <FaEnvelope />
           </div>
           <div className="contact-option__title">Gmail / Email</div>
-          <div className="contact-option__sub">info@wpvcdesigns.com</div>
+          <div className="contact-option__sub">rsrsinteriorsdesign@gmail.com</div>
         </a>
 
         <a
@@ -52,10 +52,10 @@ export default function ContactUs() {
 
       <div className="contact-fallback">
         <div className="contact-fallback__item">
-          <b>Mobile:</b> <a className="footer-link" href="tel:9640400030">9640400030</a>
+          <b>Mobile:</b> <a className="footer-link" href="tel:9640400030">+919640400030</a>
         </div>
         <div className="contact-fallback__item">
-          <b>Email:</b> <a className="footer-link" href="mailto:info@wpvcdesigns.com">info@wpvcdesigns.com</a>
+          <b>Mobile:</b> <a className="footer-link" href="tel:+1768000001556">+91768000001556</a>
         </div>
       </div>
 
