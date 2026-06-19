@@ -207,7 +207,7 @@ export default function Home(){
          
 
           {/* Projects Gallery + Satisfied Customers */}
-          <div className="gallery-sections">
+         {/*   <div className="gallery-sections">
               <div className="gallery-card">
               <div className="section-head section-head--tight">
                 <div className="eyebrow eyebrow--alt">Projects Gallery</div>
@@ -231,7 +231,7 @@ export default function Home(){
             </div>
 
 
-
+*/}
 
             
             <div className="gallery-card gallery-card--alt">
@@ -248,12 +248,12 @@ export default function Home(){
                 <div className="auto-scroll-track" aria-hidden="false">
                   {Array.from({ length: 12 }).map((_, i) => {
                     const customerImages = [
+                      '../assets/sample_1.jpeg',
+                      '../assets/sample_2.jpeg',
                       '../assets/sample_3.jpeg',
                       '../assets/sample_4.jpeg',
                       '../assets/sample_5.jpeg',
                       '../assets/sample_6.jpeg',
-                      '../assets/sample_7.jpeg',
-                      '../assets/sample_8.jpeg',
                     ]
 
 
