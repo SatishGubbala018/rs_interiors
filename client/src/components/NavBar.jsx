@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react'
+import React, { useEffect, useMemo, useState } from 'react'
 import { NavLink, useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
 
@@ -6,6 +6,23 @@ export default function NavBar() {
 
   const [menuOpen, setMenuOpen] = useState(false)
   const navigate = useNavigate()
+
+  useEffect(() => {
+    if (!menuOpen) {
+      document.body.style.overflow = ''
+      document.body.style.touchAction = ''
+      return
+    }
+
+    document.body.style.overflow = 'hidden'
+    document.body.style.touchAction = 'none'
+
+    return () => {
+      document.body.style.overflow = ''
+      document.body.style.touchAction = ''
+    }
+  }, [menuOpen])
+
 
   const links = useMemo(
     () => [
@@ -62,21 +79,21 @@ export default function NavBar() {
         {/* Mobile hamburger */}
         <button
           type="button"
-          className="nav-hamburger"
+          className={`nav-hamburger${menuOpen ? ' open' : ''}`}
           aria-label={menuOpen ? 'Close menu' : 'Open menu'}
           aria-expanded={menuOpen}
           onClick={() => setMenuOpen((v) => !v)}
         >
           <span className="hamburger-bars" aria-hidden="true">
-            <span />
-            <span />
-            <span />
+            <span className="bar bar--top" />
+            <span className="bar bar--mid" />
+            <span className="bar bar--bot" />
           </span>
         </button>
       </div>
 
       {/* Mobile dropdown */}
-      <div className={`nav-mobile-panel ${menuOpen ? 'open' : ''}`}>
+      <div className={`nav-mobile-panel ${menuOpen ? 'open' : ''}`} aria-hidden={!menuOpen}>
         <nav className="nav-mobile-links">
           {links.map((l) => (
             <NavLink

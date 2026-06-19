@@ -1,14 +1,14 @@
-## Task: Add a new page for additional services (pleated mesh, safety doors, invisible grills, wood flooring, curtains/blinds, wallpaper)
+# TODO
 
-### Steps
-- [ ] Create `client/src/pages/AdditionalServices.jsx` with:
-  - [ ] Hero/banner: main heading + paragraph + image
-  - [ ] Services grid: 6 cards for the requested items
-- [ ] Update routing in `client/src/App.jsx` to add path `/services`
-- [ ] Update navbar in `client/src/components/NavBar.jsx` to include link to `/services`
-- [ ] Add any minimal CSS needed in `client/src/styles.css` (prefer reuse existing styles)
-- [ ] Run dev server and verify:
-  - [ ] Page loads
-  - [ ] Navbar works on mobile/desktop
-  - [ ] Layout is responsive
+## Smooth navbar + page load transitions
+- [ ] Update `client/src/components/NavBar.jsx`:
+  - [ ] Add scroll locking when mobile menu is open
+  - [ ] Improve hamburger markup so it can morph into a cross
+- [ ] Update `client/src/styles.css`:
+  - [ ] Add hamburger (hamburger->cross) animations
+  - [ ] Ensure mobile panel open/close uses smooth height/opacity/transform and doesn’t flicker
+- [ ] Update `client/src/App.jsx`:
+  - [ ] Add global route/page fade transitions using Framer Motion + AnimatePresence
+- [ ] Run client build/dev check
+- [ ] Manually test on mobile width (<=720px): open/close panel, hamburger->X, scroll lock, navigation transitions
 
