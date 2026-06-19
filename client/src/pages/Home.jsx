@@ -208,7 +208,7 @@ export default function Home(){
 
           {/* Projects Gallery + Satisfied Customers */}
           <div className="gallery-sections">
-           {/*   <div className="gallery-card">
+              <div className="gallery-card">
               <div className="section-head section-head--tight">
                 <div className="eyebrow eyebrow--alt">Projects Gallery</div>
                 <h2 className="services-title services-title--small">Our best work, always</h2>
@@ -229,7 +229,11 @@ export default function Home(){
                 </div>
               </div>
             </div>
-            */}
+
+
+
+
+            
             <div className="gallery-card gallery-card--alt">
               <div className="section-head section-head--tight">
                 <div className="eyebrow eyebrow--alt">Satisfied Customers</div>
