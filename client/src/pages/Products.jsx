@@ -87,9 +87,9 @@ export default function Products() {
         transition={{ duration: 0.45 }}
         className="products-hero"
       >
-        <h2>PVC & WPC Products</h2>
+        <h2>Demac 3-layer PVC & WPVC Products</h2>
         <p className="lead">
-          Full, in-depth product details for <b>PVC</b>, <b>WPVC</b>, and <b>Demac 3-layer PVC</b>—with image galleries and
+          Full, in-depth product details for <b>Demac 3-layer PVC </b> <b>PVC</b>, <b>WPVC</b>, and —with image galleries and
           selection guidance.
         </p>
       </motion.header>
@@ -99,54 +99,6 @@ export default function Products() {
         <a href="#wpvc">WPVC</a>
         <a href="#demac-3layer">Demac 3-layer PVC</a>
       </nav>
-
-      <ProductSection
-        id="pvc"
-        eyebrow="PVC • Cupboards & Interiors"
-        title="PVC Cupboards"
-        lead="Glossy, water-resistant and easy-clean PVC interiors designed for everyday kitchens and bathrooms."
-        image={ASSETS.pvc}
-        features={[
-          'Water-resistant surface for high-moisture areas',
-          'Low-maintenance & easy-to-wipe cleaning',
-          'Available in multiple finishes and glossy textures',
-          'Strong, lightweight panels for modular cabinetry'
-        ]}
-        useCases={[
-          'Kitchen cabinets & utility cabinets',
-          'Wardrobes for humid rooms',
-          'Bathroom vanity cabinets'
-        ]}
-        whyChoose={[
-          'Smooth finish with a premium look',
-          'Practical for busy households (quick cleaning)',
-          'Reliable performance when sealed and installed correctly'
-        ]}
-      />
-
-      <ProductSection
-        id="wpvc"
-        eyebrow="WPVC • Premium Durability"
-        title="WPVC Wardrobes"
-        lead="WPVC offers enhanced durability with premium textures—built for long-term strength and a premium appearance."
-        image={ASSETS.wpvc}
-        features={[
-          'Improved durability for daily wear & tear',
-          'Premium surface textures and refined finishing options',
-          'Better resistance against moisture exposure',
-          'Ideal for wardrobe doors, shelves and storage systems'
-        ]}
-        useCases={[
-          'Bedroom wardrobes & storage units',
-          'Kids room cabinetry',
-          'Home offices and utility storage'
-        ]}
-        whyChoose={[
-          'A stronger feel with a more luxurious finish',
-          'Stays visually appealing for longer',
-          'Designed to handle everyday usage'
-        ]}
-      />
 
       <section className="products-block" id="demac-3layer">
         <div className="products-block__top">
@@ -259,7 +211,176 @@ export default function Products() {
           </div>
         </div>
       </section>
+
+      <section className="products-block" id="wpvc">
+        <div className="products-block__top">
+          <div className="products-block__media" aria-hidden="true">
+            <img src={ASSETS.wpvc} alt="WPVC" />
+          </div>
+
+          <div className="products-block__content">
+            <div className="eyebrow">WPVC</div>
+            <h3 className="products-title">WPVC Wardrobes & Storage</h3>
+            <p className="lead products-lead">
+              Enhanced durability with premium textures—built for long-term strength and a refined appearance.
+            </p>
+
+            <div className="products-quick-cta">
+              <Link className="btn btn--hero" to="/contact">Get a Quote</Link>
+              <Link className="btn btn--ghost" to={`/products#wpvc`}>Jump to Details</Link>
+            </div>
+          </div>
+        </div>
+
+        <div className="products-columns">
+          <div className="products-col">
+            <h4>Key Features</h4>
+            <BulletList
+              items={[
+                'Improved durability for daily wear & tear',
+                'Premium surface textures and refined finishing options',
+                'Better resistance against moisture exposure',
+                'Ideal for wardrobe doors, shelves and storage systems'
+              ]}
+            />
+          </div>
+
+          <div className="products-col">
+            <h4>Best Use For</h4>
+            <BulletList
+              items={[
+                'Bedroom wardrobes & storage units',
+                'Kids room cabinetry',
+                'Home offices and utility storage'
+              ]}
+            />
+          </div>
+
+          <div className="products-col">
+            <h4>Why Choose RS Interiors</h4>
+            <BulletList
+              items={[
+                'A stronger feel with a more luxurious finish',
+                'Stays visually appealing for longer',
+                'Designed to handle everyday usage'
+              ]}
+            />
+          </div>
+        </div>
+
+        <div className="products-divider" />
+
+        <div className="products-inpage-notes">
+          <h4>Selection Guidance (Quick)</h4>
+          <div className="products-notes-grid">
+            <div className="note-tile">
+              <b>Choose PVC</b>
+              <p>For glossy, easy-clean interiors—best for moderate usage and high-moisture areas.</p>
+            </div>
+            <div className="note-tile">
+              <b>Choose WPVC</b>
+              <p>For longer-lasting wardrobe surfaces with refined textures and daily durability.</p>
+            </div>
+            <div className="note-tile">
+              <b>Choose Demac 3-layer PVC</b>
+              <p>For heavy usage kitchens and large cabinets—designed to reduce warping and improve stability.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="products-block" id="pvc">
+        <div className="products-block__top">
+          <div className="products-block__media" aria-hidden="true">
+            <img src={ASSETS.pvc} alt="PVC" />
+          </div>
+
+          <div className="products-block__content">
+            <div className="eyebrow">PVC</div>
+            <h3 className="products-title">PVC Cabinets &amp; Cupboards</h3>
+            <p className="lead products-lead">
+              Glossy, water-resistant and easy-clean PVC interiors designed for everyday kitchens and bathrooms.
+            </p>
+
+            <div className="products-quick-cta">
+              <Link className="btn btn--hero" to="/contact">Get a Quote</Link>
+              <Link className="btn btn--ghost" to={`/products#pvc`}>Jump to Details</Link>
+            </div>
+          </div>
+        </div>
+
+        <div className="products-columns">
+          <div className="products-col">
+            <h4>Key Features</h4>
+            <BulletList
+              items={[
+                'Water-resistant surface for high-moisture areas',
+                'Low-maintenance & easy-to-wipe cleaning',
+                'Available in multiple finishes and glossy textures',
+                'Strong, lightweight panels for modular cabinetry'
+              ]}
+            />
+          </div>
+
+          <div className="products-col">
+            <h4>Best Use For</h4>
+            <BulletList
+              items={[
+                'Kitchen cabinets & utility cabinets',
+                'Wardrobes for humid rooms',
+                'Bathroom vanity cabinets'
+              ]}
+            />
+          </div>
+
+          <div className="products-col">
+            <h4>Why Choose RS Interiors</h4>
+            <BulletList
+              items={[
+                'Smooth finish with a premium look',
+                'Practical for busy households (quick cleaning)',
+                'Reliable performance when sealed and installed correctly'
+              ]}
+            />
+          </div>
+        </div>
+
+        <div className="products-divider" />
+      </section>
+
+      <section className="products-block" id="pvc-gallery">
+        <div className="products-gallery">
+          <div className="products-gallery__head">
+            <h4>PVC Image Gallery</h4>
+            <p className="products-gallery__sub">Hover to pause. Use this to understand finishes and typical layouts.</p>
+          </div>
+
+          <div className="auto-scroll-gallery" role="region" aria-label="PVC gallery">
+            <div className="auto-scroll-track">
+              {[
+                { src: ASSETS.gallery1, alt: 'PVC gallery 1' },
+                { src: ASSETS.sample1, alt: 'PVC sample 1' },
+                { src: ASSETS.sample2, alt: 'PVC sample 2' },
+                { src: ASSETS.sample3, alt: 'PVC sample 3' },
+                { src: ASSETS.sample4, alt: 'PVC sample 4' },
+                { src: ASSETS.sample5, alt: 'PVC sample 5' }
+              ].map((img, idx) => (
+                <motion.div
+                  key={`${img.src}-${idx}`}
+                  className="auto-scroll-item"
+                  whileHover={{ scale: 1.03 }}
+                  transition={{ duration: 0.25 }}
+                >
+                  <img src={img.src} alt={img.alt} />
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
     </section>
   )
 }
+
+
 

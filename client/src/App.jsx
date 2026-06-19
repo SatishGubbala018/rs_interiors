@@ -27,14 +27,14 @@ export default function App() {
         <div className="footer-inner">
 <div className="footer-col">
             <div className="footer-brand">RS Interiors</div>
-            <div className="footer-muted">PVC &amp; WPC Cupboards • Kitchen Cabinets • Wardrobes</div>
+            <div className="footer-muted">Demac 3 Layer PVC &amp; WPVC Cupboards • Kitchen Cabinets • Wardrobes</div>
           </div>
 
           <div className="footer-col">
             <div className="footer-heading">Contact Us</div>
 <a className="footer-link" href="tel:+919640400030">Mobile: +919640400030</a>
             <a className="footer-link" href="tel:+1768000001556">Mobile: +917680001556</a>
-            <a className="footer-link" href="mailto:rsrsinteriorsdesign@gmail.com">Email: rsrsinteriorsdesign@gmail.com</a>
+<a className="footer-link" href="mailto:inforsinteriordesgins@gmail.com">Email: inforsinteriordesgins@gmail.com</a>
             <a className="footer-link" href="/contact">Quick message</a>
           </div>
 

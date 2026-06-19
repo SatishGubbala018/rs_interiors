@@ -1,7 +1,9 @@
 import React, { useEffect, useMemo, useState } from 'react'
 import useReveal from '../hooks/useReveal'
+import DMACSection from '../components/DMACSection'
 import { Link } from 'react-router-dom'
 import { FaClock, FaHandshake, FaHammer, FaShieldAlt } from 'react-icons/fa'
+
 
 function ClockIcon() {
   return <FaClock aria-hidden="true" />
@@ -22,6 +24,15 @@ function ShieldIcon() {
 export default function Home(){
 
   const [bannerRef, bannerVisible] = useReveal({ threshold: 0.12 })
+
+  const [heroReady, setHeroReady] = useState(false)
+
+  useEffect(() => {
+    // trigger 3D intro once on initial page load
+    const t = window.setTimeout(() => setHeroReady(true), 60)
+    return () => window.clearTimeout(t)
+  }, [])
+
 
   const [statsRef, statsVisible] = useReveal({ threshold: 0.15, rootMargin: '0px 0px -10% 0px' })
 
@@ -118,12 +129,12 @@ export default function Home(){
         <div ref={bannerRef} className={`banner-overlay reveal-up banner-overlay--split ${bannerVisible ? 'show' : ''}`}>
           <div className="hero-split">
             <div className="hero-split-left">
-              <div className="eyebrow">WPVC • PVC • 3 LAYER</div>
+              <div className="eyebrow">• DEMCA 3 LAYER • WPVC • PVC</div>
               <h1 className="overlay-title hero-title">
-                Modern PVC , WPC &amp; 3 LAYER Cupboards
+                Demac 3-LAYER Cupboards (Premium Strength)
               </h1>
               <p className="overlay-sub hero-sub">
-                Stylish, durable and water-resistant cabinetry solutions for every home and office.
+                Demac 3-layer system designed for superior stability, strength and long-term performance.
               </p>
               <div className="banner-cta">
                 <a href="/products" className="btn btn--hero">Explore Products</a>
@@ -131,8 +142,8 @@ export default function Home(){
             </div>
 
             <div className="hero-split-right">
-              <img
-                className="hero-wpvc-img"
+<img
+                className={`hero-wpvc-img ${heroReady ? 'hero-wpvc-img--ready' : ''}`}
                 src="https://windowfab.in/products/kitchen.webp"
                 alt="WPVC/WPC cabinets"
               />
@@ -140,6 +151,8 @@ export default function Home(){
           </div>
         </div>
       </div>
+
+      
 
     
 
@@ -152,16 +165,16 @@ export default function Home(){
           </div>
 
           <div className="services-grid">
-            <Link to="/products/pvc" className="service-card service-card--link" aria-label="Read details about PVC cupboards">
+            <Link to="/products/3layer" className="service-card service-card--demac service-card--link" aria-label="Read details about Demac 3-layer cabinets">
               <div className="service-media">
                 <img
-                  src={new URL('../assets/pvc.png', import.meta.url).toString()}
-                  alt="PVC cupboards"
+                  src={new URL('../assets/3layer.png', import.meta.url).toString()}
+                  alt="Demac 3-layer kitchen cabinets"
                 />
               </div>  
-              <div className="service-icon">PVC</div>
-              <h3>PVC Cupboards</h3>
-              <p>Water-resistant, glossy and easy-clean PVC interiors.</p>
+              <div className="service-icon">Demac • 3 Layer</div>
+              <h3>Demac 3-Layer Cabinets</h3>
+              <p>3-layer PVC system for superior rigidity, stability and long-term performance.</p>
             </Link>
 
             <Link to="/products/wpvc" className="service-card service-card--link" aria-label="Read details about WPVC wardrobes">
@@ -176,19 +189,20 @@ export default function Home(){
               <p>Enhanced durability with premium textures and finishes.</p>
             </Link>
 
-            <Link to="/products/3layer" className="service-card service-card--link" aria-label="Read details about 3-layer cabinets">
+            <Link to="/products/pvc" className="service-card service-card--link" aria-label="Read details about PVC cupboards">
               <div className="service-media">
                 <img
-                  src={new URL('../assets/3layer.png', import.meta.url).toString()}
-                  alt="3-layer kitchen cabinets"
+                  src={new URL('../assets/pvc.png', import.meta.url).toString()}
+                  alt="PVC cupboards"
                 />
               </div>
-              <div className="service-icon">Demac • 3 Layer</div>
-              <h3>Demac 3-Layer Cabinets</h3>
-              <p>Demac 3-layer PVC system for superior strength, stability and long-term performance.</p>
+              <div className="service-icon">PVC</div>
+              <h3>PVC Cupboards</h3>
+              <p>Water-resistant, glossy and easy-clean PVC interiors.</p>
             </Link>
           </div>
 
+        <DMACSection />
 
          
 
@@ -258,6 +272,8 @@ export default function Home(){
           </div>
         </div>
       </div>
+
+      
 
       <div className="stats-section" ref={statsRef}>
         <div className="stats-row" aria-label="RS Interiors company highlights">

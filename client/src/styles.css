@@ -152,6 +152,38 @@ nav a{margin-left:12px; transition: all 220ms cubic-bezier(0.34, 1.56, 0.64, 1);
   background: rgba(255,255,255,0.35);
 }
 
+/* Home hero 3D intro (runs once on page load) */
+.hero-wpvc-img--ready{
+  will-change: transform, filter;
+  animation: heroWpvc3dIn 1100ms cubic-bezier(0.18, 0.9, 0.15, 1) both;
+  transform-origin: 70% 40%;
+}
+
+@keyframes heroWpvc3dIn{
+  0%{
+    transform: perspective(900px) rotateY(-28deg) rotateX(18deg) translateZ(-90px) scale(0.92);
+    filter: blur(1.4px) saturate(1.15) brightness(1.02);
+    opacity: 0;
+  }
+  35%{
+    transform: perspective(900px) rotateY(12deg) rotateX(-6deg) translateZ(22px) scale(1.02);
+    filter: blur(0.6px) saturate(1.25) brightness(1.06);
+    opacity: 1;
+  }
+  70%{
+    transform: perspective(900px) rotateY(-6deg) rotateX(3deg) translateZ(0px) scale(1.00);
+    filter: blur(0px) saturate(1.12) brightness(1.03);
+  }
+  100%{
+    transform: perspective(900px) rotateY(0deg) rotateX(0deg) translateZ(0px) scale(1.00);
+    filter: blur(0px) saturate(1.05) brightness(1.0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce){
+  .hero-wpvc-img--ready{ animation: none; opacity: 1; transform: none; }
+}
+
 
 
 
@@ -366,6 +398,22 @@ nav a{margin-left:12px; transition: all 220ms cubic-bezier(0.34, 1.56, 0.64, 1);
 
 
 .btn--ghost{background: transparent; border:1px solid rgba(255,255,255,0.14); box-shadow:none; color:var(--card);}
+
+/* DMAC brochure section */
+.dmac-section{margin:28px 0}
+.dmac-hero{min-height:40vh;background-size:cover;background-position:center center;display:flex;align-items:center;position:relative;border-radius:12px;overflow:hidden}
+.dmac-overlay{width:100%;padding:36px;background:linear-gradient(180deg, rgba(4,6,12,0.72), rgba(4,6,12,0.52));-webkit-backdrop-filter: blur(7px);backdrop-filter: blur(7px)}
+.dmac-content{max-width:1100px;margin:0 auto;color:#fff;text-shadow:0 8px 30px rgba(0,0,0,0.55)}
+.dmac-content .overlay-title{color: var(--accent5) !important; text-shadow: 0 10px 40px rgba(0,0,0,0.55);}
+.dmac-content .lead{color:rgba(255,255,255,0.92);max-width:720px}
+.dmac-actions{margin-top:14px;display:flex;gap:12px}
+.dmac-overlay .eyebrow{background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.12); color:#fff}
+.dmac-overlay .btn--ghost{color:#fff;border-color:rgba(255,255,255,0.18)}
+
+@media (max-width: 996px){
+  .dmac-hero{min-height: auto}
+  .dmac-content{padding:12px}
+}
 .btn--ghost:hover{background: rgba(255,255,255,0.04); box-shadow: 0 14px 35px rgba(124,58,237,0.20)}
 
 .services{padding:0 0 30px;}
@@ -398,6 +446,38 @@ nav a{margin-left:12px; transition: all 220ms cubic-bezier(0.34, 1.56, 0.64, 1);
 .services-grid{display:grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap:14px;}
 .service-card{background: linear-gradient(135deg, rgba(15,23,42,0.95), rgba(11,16,32,0.88)); border: 1px solid rgba(255,255,255,0.10); border-radius:14px; padding:16px; box-shadow: 0 10px 28px rgba(0,0,0,0.20); transition: all 260ms cubic-bezier(0.34, 1.56, 0.64, 1);}
 .service-card:hover{transform: translateY(-4px); border-color: rgba(34,211,238,0.28); box-shadow: 0 18px 46px rgba(0,0,0,0.28)}
+
+/* Demac 3-layer highlight */
+/* Demac card should match the same look as the other service cards */
+.service-card--demac{
+  border-color: rgba(255,255,255,0.10);
+  box-shadow: 0 10px 28px rgba(0,0,0,0.20);
+  background: linear-gradient(135deg, rgba(15,23,42,0.95), rgba(11,16,32,0.88));
+  position:relative;
+  overflow:hidden;
+}
+
+.service-card--demac::before,
+.service-card--demac:hover::before{
+  opacity:0;
+}
+
+.service-card--demac .service-icon{
+  background: rgba(34,211,238,0.10);
+  border-color: rgba(34,211,238,0.25);
+  color: var(--accent2);
+}
+
+/* Keep the 3L badge if you want; if not desired, remove these two rules */
+.service-card--demac h3::after{
+  content:'3L';
+}
+
+@media (max-width: 520px){
+  .service-card--demac h3::after{display:none;}
+}
+
+
 .service-card--link{display:block; text-decoration:none; color:inherit; cursor:pointer}
 .service-card--link:focus{outline:none}
 .service-card--link:focus-visible{box-shadow: 0 0 0 4px rgba(34,211,238,0.25), 0 18px 46px rgba(0,0,0,0.28)}
@@ -529,7 +609,48 @@ nav a{margin-left:12px; transition: all 220ms cubic-bezier(0.34, 1.56, 0.64, 1);
 
 
 /* Products page (in-depth sections) */
+
+/* Emphasis for Demac 3-layer section (valid CSS) */
+#demac-3layer .products-block__media img{
+  box-shadow: 0 30px 90px rgba(245,158,11,0.18), 0 18px 60px rgba(124,58,237,0.10);
+  border-color: rgba(245,158,11,0.35);
+}
+
+#demac-3layer{
+  border: 1px solid rgba(245,158,11,0.22);
+  border-radius: 16px;
+  padding: 10px 12px 8px;
+  background: linear-gradient(135deg, rgba(124,58,237,0.06), rgba(245,158,11,0.03));
+}
+
+#demac-3layer .products-title{
+  background: linear-gradient(90deg, rgba(245,158,11,1), rgba(34,211,238,0.95), rgba(124,58,237,0.95));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+#demac-3layer .products-divider{
+  background: rgba(245,158,11,0.22);
+}
+
+#demac-3layer .products-col{
+  border-color: rgba(245,158,11,0.18);
+}
+
+#demac-3layer .products-col h4{
+  color: var(--accent5);
+}
+
+#demac-3layer .products-col h4{color: var(--accent5);}
+
+#demac-3layer .products-block__top{position:relative;}
+
+
+
+
 .products-hero{padding:0 0 14px;}
+
 .products-hero h2{font-size:38px; margin:0 0 8px; color:var(--accent1)}
 
 .products-sticky-nav{

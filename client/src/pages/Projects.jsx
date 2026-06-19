@@ -28,14 +28,63 @@ const itemVariants = {
 }
 
 const VIDEO_ASSETS = [
-  { id: 'v1', title: 'Showcase Installation 1', description: 'PVC / WPC cabinetry showcase video', src: new URL('../assets/videos/sample_video_1.mp4', import.meta.url).toString() },
-  { id: 'v2', title: 'Showcase Installation 2', description: 'Finish & texture walkthrough video', src: new URL('../assets/videos/sample_video_2.mp4', import.meta.url).toString() },
-  { id: 'v3', title: 'Showcase Installation 3', description: 'Modular kitchen installation video', src: new URL('../assets/videos/sample_video_3.mp4', import.meta.url).toString() },
-  { id: 'v4', title: 'Showcase Installation 4', description: 'Wardrobe / storage fit & finish video', src: new URL('../assets/videos/sample_video_4.mp4', import.meta.url).toString() },
-  { id: 'v5', title: 'Showcase Installation 5', description: 'Cabinet detailing & edges video', src: new URL('../assets/videos/sample_video_5.mp4', import.meta.url).toString() },
-  { id: 'v6', title: 'Showcase Installation 6', description: 'Kitchen layout & hardware video', src: new URL('../assets/videos/sample_video_6.mp4', import.meta.url).toString() },
-  { id: 'v7', title: 'Showcase Installation 7', description: 'Premium finish showcase video', src: new URL('../assets/videos/sample_video_7.mp4', import.meta.url).toString() },
-  { id: 'v8', title: 'Showcase Installation 8', description: 'Final reveal & quality walkthrough video', src: new URL('../assets/videos/sample_video_8.mp4', import.meta.url).toString() }
+  ...Array.from({ length: 11 }).map((_, i) => {
+    const n = i + 1
+    return {
+      id: `interior_${n}`,
+      title: `Interior Gallery ${n}`,
+      description: `Interior gallery video ${n}`,
+      src: new URL(`../assets/videos/interior_gallery${n}.mp4`, import.meta.url).toString(),
+    }
+  }),
+  {
+    id: 'v1',
+    title: 'Showcase Installation 1',
+    description: 'PVC / WPC cabinetry showcase video',
+    src: new URL('../assets/videos/sample_video_1.mp4', import.meta.url).toString()
+  },
+  {
+    id: 'v2',
+    title: 'Showcase Installation 2',
+    description: 'Finish & texture walkthrough video',
+    src: new URL('../assets/videos/sample_video_2.mp4', import.meta.url).toString()
+  },
+  {
+    id: 'v3',
+    title: 'Showcase Installation 3',
+    description: 'Modular kitchen installation video',
+    src: new URL('../assets/videos/sample_video_3.mp4', import.meta.url).toString()
+  },
+  {
+    id: 'v4',
+    title: 'Showcase Installation 4',
+    description: 'Wardrobe / storage fit & finish video',
+    src: new URL('../assets/videos/sample_video_4.mp4', import.meta.url).toString()
+  },
+  {
+    id: 'v5',
+    title: 'Showcase Installation 5',
+    description: 'Cabinet detailing & edges video',
+    src: new URL('../assets/videos/sample_video_5.mp4', import.meta.url).toString()
+  },
+  {
+    id: 'v6',
+    title: 'Showcase Installation 6',
+    description: 'Kitchen layout & hardware video',
+    src: new URL('../assets/videos/sample_video_6.mp4', import.meta.url).toString()
+  },
+  {
+    id: 'v7',
+    title: 'Showcase Installation 7',
+    description: 'Premium finish showcase video',
+    src: new URL('../assets/videos/sample_video_7.mp4', import.meta.url).toString()
+  },
+  {
+    id: 'v8',
+    title: 'Showcase Installation 8',
+    description: 'Final reveal & quality walkthrough video',
+    src: new URL('../assets/videos/sample_video_8.mp4', import.meta.url).toString()
+  }
 ]
 
 export default function Projects() {
@@ -58,7 +107,7 @@ export default function Projects() {
           transition={{ duration: 0.8, ease: [0.34, 1.56, 0.64, 1] }}
         >
           <h2 className="overlay-title small">Projects</h2>
-          <p className="overlay-sub">Selected installations and finishes—watch our PVC & WPC work.</p>
+          <p className="overlay-sub">Selected installations and finishes—watch our Demac 3 layer PVC & WPVC work.</p>
         </motion.div>
       </div>
 

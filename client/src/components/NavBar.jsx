@@ -10,7 +10,7 @@ export default function NavBar() {
   const links = useMemo(
     () => [
       { to: '/', label: 'Home' },
-      { to: '/products', label: 'PVC & WPC Products' },
+      { to: '/products', label: 'Demac 3 Layer & WPVC Products' },
       { to: '/projects', label: 'Projects' },
       { to: '/about', label: 'About' },
       { to: '/contact', label: 'Contact Us' }
