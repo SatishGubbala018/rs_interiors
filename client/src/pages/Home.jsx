@@ -244,16 +244,16 @@ export default function Home(){
                 <div className="auto-scroll-track" aria-hidden="false">
                   {Array.from({ length: 12 }).map((_, i) => {
                     const customerImages = [
-                      '../assets/sample_3.jpeg',
-                      '../assets/sample_4.jpeg',
-                      '../assets/sample_5.jpeg',
-                      '../assets/sample_6.jpeg',
-                      '../assets/sample_7.jpeg',
-                      '../assets/sample_8.jpeg',
+                      new URL('../assets/sample_3.jpeg', import.meta.url).toString(),
+                      new URL('../assets/sample_4.jpeg', import.meta.url).toString(),
+                      new URL('../assets/sample_5.jpeg', import.meta.url).toString(),
+                      new URL('../assets/sample_6.jpeg', import.meta.url).toString(),
+                      new URL('../assets/sample_7.jpeg', import.meta.url).toString(),
+                      new URL('../assets/sample_8.jpeg', import.meta.url).toString(),
                     ]
 
+                    const src = customerImages[i % customerImages.length]
 
-                    const src = new URL(customerImages[i % customerImages.length], import.meta.url).toString()
 
                     return (
                       <div className="auto-scroll-item auto-scroll-item--testimonial" key={`c-${i}`}>
