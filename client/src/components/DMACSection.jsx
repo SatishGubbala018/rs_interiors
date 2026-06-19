@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const brochureUrl = new URL('../assets/brochure-demac-multi-Board.pdf', import.meta.url).toString()
 const bgImage = new URL('../assets/dmac_broucher.png', import.meta.url).toString()
@@ -17,9 +18,9 @@ export default function DMACSection() {
               <a className="btn btn--hero" href={brochureUrl} target="_blank" rel="noreferrer">
                 Download Brochure (PDF)
               </a>
-              <a className="btn btn--ghost" href="/products/3layer">
+              <Link className="btn btn--ghost" to="/products/3layer">
                 View Demac Products
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -27,4 +28,5 @@ export default function DMACSection() {
     </section>
   )
 }
+
 

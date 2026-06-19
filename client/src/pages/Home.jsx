@@ -129,7 +129,7 @@ export default function Home(){
         <div ref={bannerRef} className={`banner-overlay reveal-up banner-overlay--split ${bannerVisible ? 'show' : ''}`}>
           <div className="hero-split">
             <div className="hero-split-left">
-              <div className="eyebrow">• DEMCA 3 LAYER • WPVC • PVC</div>
+              <div className="eyebrow">• DEMAC 3 LAYER • WPVC • PVC</div>
               <h1 className="overlay-title hero-title">
                 Demac 3-LAYER Cupboards (Premium Strength)
               </h1>
@@ -137,7 +137,7 @@ export default function Home(){
                 Demac 3-layer system designed for superior stability, strength and long-term performance.
               </p>
               <div className="banner-cta">
-                <a href="/products" className="btn btn--hero">Explore Products</a>
+                <Link to="/products" className="btn btn--hero">Explore Products</Link>
               </div>
             </div>
 
