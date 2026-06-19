@@ -38,7 +38,7 @@ href="mailto:inforsinteriordesgins@gmail.com?subject=Contact%20from%20RS%20Inter
 
         <a
           className="contact-option contact-option--instagram"
-          href="https://www.instagram.com/"
+          href="https://www.instagram.com/rs_interior_desgins?igsh=MWl1Z253bzQzeHdocQ=="
           target="_blank"
           rel="noreferrer"
         >

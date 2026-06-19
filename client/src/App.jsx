@@ -7,6 +7,8 @@ import Projects from './pages/Projects'
 import ContactUs from './pages/ContactUs'
 import About from './pages/About'
 import ProductDetails from './pages/ProductDetails'
+import AdditionalServices from './pages/AdditionalServices'
+
 
 export default function App() {
   return (
@@ -20,7 +22,9 @@ export default function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/about" element={<About />} />
+          <Route path="/services" element={<AdditionalServices />} />
         </Routes>
+
       </main>
 
       <footer className="footer">
