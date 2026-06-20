@@ -2,14 +2,9 @@
   "rewrites": [
     { "source": "/api/(.*)", "destination": "/api/$1" },
 
-    { "source": "/products(.*)", "destination": "/" },
-    { "source": "/projects(.*)", "destination": "/" },
-    { "source": "/contact(.*)", "destination": "/" },
-    { "source": "/about(.*)", "destination": "/" },
-    { "source": "/services(.*)", "destination": "/" },
-
-    { "source": "/(.*)", "destination": "/" }
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
+
 
 
