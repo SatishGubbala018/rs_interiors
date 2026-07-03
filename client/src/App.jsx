@@ -15,8 +15,9 @@ const BASE_URL = 'https://rsinteriordesigns.in'
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
+  "@id": BASE_URL + "#business",
   "name": "RS Interiors",
-  "description": "Premium Demac 3 Layer PVC & WPVC Cupboards, Kitchen Cabinets, and Wardrobes",
+  "description": "RS Interiors provides premium PVC cupboards, modular kitchens, wardrobes, wallpaper installation, curtains and blinds, invisible grills, metal sliding safety doors, and complete home interior design services in Hyderabad and Telangana.",
   "url": BASE_URL,
   "telephone": ["+919640400030", "+917680001556"],
   "email": "inforsinteriordesgins@gmail.com",
@@ -39,7 +40,54 @@ const jsonLd = {
     "opens": "09:00",
     "closes": "19:00"
   },
-  "priceRange": "$$"
+  "priceRange": "$$",
+  "image": BASE_URL + "/src/assets/logo.png",
+  "logo": BASE_URL + "/src/assets/logo.png",
+  "sameAs": [
+    "https://www.instagram.com/rs_interior_desgins?igsh=MWl1Z253bzQzeHdocQ=="
+  ],
+  "areaServed": {
+    "@type": "City",
+    "name": "Hyderabad"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Interior Design Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "PVC Cupboards",
+          "description": "Premium PVC cupboards and wardrobes for modern homes"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Modular Kitchen",
+          "description": "Custom modular kitchen designs with Demac 3-layer PVC"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Wardrobe Design",
+          "description": "Custom wardrobe designs in PVC, WPVC, and Demac 3-layer"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Home Interior Design",
+          "description": "Complete home interior design services in Hyderabad"
+        }
+      }
+    ]
+  }
 }
 
 const seoData = {

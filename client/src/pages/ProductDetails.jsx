@@ -1,4 +1,5 @@
 import React from 'react'
+import { Helmet } from 'react-helmet-async'
 import { useParams, Link } from 'react-router-dom'
 
 const PRODUCT_MAP = {
@@ -85,8 +86,35 @@ export default function ProductDetails() {
   const key = (type || '').toLowerCase()
   const data = PRODUCT_MAP[key] || PRODUCT_MAP['pvc']
 
+  const pageTitle = `${data.title} Hyderabad | RS Interiors`
+  const pageDesc = `Explore ${data.title} by RS Interiors in Hyderabad. ${data.lead} Premium quality PVC, WPVC, and Demac 3-layer interiors for your home.`
+
   return (
-    <section className="page product-details">
+    <>
+      <Helmet>
+        <title>{pageTitle}</title>
+        <meta name="description" content={pageDesc} />
+        <link rel="canonical" href={`https://www.rsinteriordesigns.in/products/${key}`} />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={`https://www.rsinteriordesigns.in/products/${key}`} />
+        <meta property="og:title" content={pageTitle} />
+        <meta property="og:description" content={pageDesc} />
+        <meta property="og:image" content="https://www.rsinteriordesigns.in/src/assets/logo.png" />
+        <meta property="og:site_name" content="RS Interiors" />
+        <meta property="og:locale" content="en_IN" />
+        
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content={`https://www.rsinteriordesigns.in/products/${key}`} />
+        <meta name="twitter:title" content={pageTitle} />
+        <meta name="twitter:description" content={pageDesc} />
+        <meta name="twitter:image" content="https://www.rsinteriordesigns.in/src/assets/logo.png" />
+      </Helmet>
+      
+      <section className="page product-details">
       <div className="product-hero">
         <div className="product-hero__media">
           <img src={data.image} alt={data.title} />
@@ -103,6 +131,9 @@ export default function ProductDetails() {
             </Link>
             <Link to="/contact" className="btn btn--ghost">
               Get a Quote
+            </Link>
+            <Link to="/projects" className="btn btn--ghost content-link">
+              See Projects
             </Link>
           </div>
         </div>
@@ -125,6 +156,7 @@ export default function ProductDetails() {
         </div>
       </div>
     </section>
+    </>
   )
 }
 

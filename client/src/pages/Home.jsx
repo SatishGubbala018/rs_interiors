@@ -1,4 +1,5 @@
 import React, { useEffect, useMemo, useState } from 'react'
+import { Helmet } from 'react-helmet-async'
 import useReveal from '../hooks/useReveal'
 import DMACSection from '../components/DMACSection'
 import { Link } from 'react-router-dom'
@@ -22,7 +23,6 @@ function ShieldIcon() {
 }
 
 export default function Home(){
-
   const [bannerRef, bannerVisible] = useReveal({ threshold: 0.12 })
 
   const [heroReady, setHeroReady] = useState(false)
@@ -102,7 +102,31 @@ export default function Home(){
   const whatsappHref = `https://wa.me/${whatsappNumber}`
 
   return (
-    <section className="hero">
+    <>
+      <Helmet>
+        <title>Interior Designers Hyderabad | Premium PVC Cupboards & Modular Kitchen | RS Interiors</title>
+        <meta name="description" content="RS Interiors provides premium PVC cupboards, modular kitchens, wardrobes, wallpaper installation, curtains and blinds, invisible grills, metal sliding safety doors, and complete home interior design services in Hyderabad and Telangana." />
+        <link rel="canonical" href="https://www.rsinteriordesigns.in/" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.rsinteriordesigns.in/" />
+        <meta property="og:title" content="Interior Designers Hyderabad | Premium PVC Cupboards & Modular Kitchen | RS Interiors" />
+        <meta property="og:description" content="RS Interiors provides premium PVC cupboards, modular kitchens, wardrobes, wallpaper installation, curtains and blinds, invisible grills, metal sliding safety doors, and complete home interior design services in Hyderabad and Telangana." />
+        <meta property="og:image" content="https://www.rsinteriordesigns.in/src/assets/logo.png" />
+        <meta property="og:site_name" content="RS Interiors" />
+        <meta property="og:locale" content="en_IN" />
+        
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://www.rsinteriordesigns.in/" />
+        <meta name="twitter:title" content="Interior Designers Hyderabad | Premium PVC Cupboards & Modular Kitchen | RS Interiors" />
+        <meta name="twitter:description" content="RS Interiors provides premium PVC cupboards, modular kitchens, wardrobes, wallpaper installation, curtains and blinds, invisible grills, metal sliding safety doors, and complete home interior design services in Hyderabad and Telangana." />
+        <meta name="twitter:image" content="https://www.rsinteriordesigns.in/src/assets/logo.png" />
+      </Helmet>
+      
+      <section className="hero">
       <div className="whatsapp-fab-wrap" aria-hidden={false}>
         <a
           className="whatsapp-fab"
@@ -131,10 +155,10 @@ export default function Home(){
             <div className="hero-split-left">
               <div className="eyebrow">• DEMAC 3 LAYER • WPVC • PVC</div>
               <h1 className="overlay-title hero-title">
-                Demac 3-LAYER Cupboards (Premium Strength)
+                Premium PVC Cupboards & Modular Kitchen Solutions in Hyderabad
               </h1>
               <p className="overlay-sub hero-sub">
-                Demac 3-layer system designed for superior stability, strength and long-term performance.
+                Demac 3-layer system designed for superior stability, strength and long-term performance. Explore our <Link to="/products" className="content-link">PVC cupboards</Link>, <Link to="/products/wpvc" className="content-link">WPVC wardrobes</Link>, and <Link to="/products/3layer" className="content-link">Demac 3-layer cabinets</Link>.
               </p>
               <div className="banner-cta">
                 <Link to="/products" className="btn btn--hero">Explore Products</Link>
@@ -353,6 +377,7 @@ export default function Home(){
         </div>
       </div>
     </section>
+    </>
   )
 }
 

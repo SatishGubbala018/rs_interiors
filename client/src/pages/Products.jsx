@@ -1,4 +1,5 @@
 import React from 'react'
+import { Helmet } from 'react-helmet-async'
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 
@@ -80,17 +81,41 @@ function ProductSection({
 
 export default function Products() {
   return (
-    <section className="page">
+    <>
+      <Helmet>
+        <title>PVC Cupboards Hyderabad | Modular Kitchen & Wardrobe Design | RS Interiors Products</title>
+        <meta name="description" content="Explore RS Interiors' premium PVC cupboards, WPVC wardrobes, and modular kitchen cabinets in Hyderabad. High-quality, durable, and stylish interior solutions for your home." />
+        <link rel="canonical" href="https://www.rsinteriordesigns.in/products" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.rsinteriordesigns.in/products" />
+        <meta property="og:title" content="PVC Cupboards Hyderabad | Modular Kitchen & Wardrobe Design | RS Interiors Products" />
+        <meta property="og:description" content="Explore RS Interiors' premium PVC cupboards, WPVC wardrobes, and modular kitchen cabinets in Hyderabad. High-quality, durable, and stylish interior solutions." />
+        <meta property="og:image" content="https://www.rsinteriordesigns.in/src/assets/logo.png" />
+        <meta property="og:site_name" content="RS Interiors" />
+        <meta property="og:locale" content="en_IN" />
+        
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://www.rsinteriordesigns.in/products" />
+        <meta name="twitter:title" content="PVC Cupboards Hyderabad | Modular Kitchen & Wardrobe Design | RS Interiors Products" />
+        <meta name="twitter:description" content="Explore RS Interiors' premium PVC cupboards, WPVC wardrobes, and modular kitchen cabinets in Hyderabad." />
+        <meta name="twitter:image" content="https://www.rsinteriordesigns.in/src/assets/logo.png" />
+      </Helmet>
+      
+      <section className="page">
       <motion.header
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.45 }}
         className="products-hero"
       >
-        <h2>Demac 3-layer PVC & WPVC Products</h2>
+        <h1>Demac 3-layer PVC & WPVC Products</h1>
         <p className="lead">
           Full, in-depth product details for <b>Demac 3-layer PVC </b> <b>PVC</b>, <b>WPVC</b>, and —with image galleries and
-          selection guidance.
+          selection guidance. Looking for complete home interiors? Visit our <Link to="/services" className="content-link">additional services</Link> page.
         </p>
       </motion.header>
 
@@ -116,6 +141,7 @@ export default function Products() {
             <div className="products-quick-cta">
               <Link className="btn btn--hero" to="/contact">Get a Quote</Link>
               <Link className="btn btn--ghost" to={`/products#demac-3layer`}>View Gallery</Link>
+              <Link className="btn btn--ghost" to="/projects">See Projects</Link>
             </div>
           </div>
         </div>
@@ -228,6 +254,7 @@ export default function Products() {
             <div className="products-quick-cta">
               <Link className="btn btn--hero" to="/contact">Get a Quote</Link>
               <Link className="btn btn--ghost" to={`/products#wpvc`}>Jump to Details</Link>
+              <Link className="btn btn--ghost" to="/projects">See Projects</Link>
             </div>
           </div>
         </div>
@@ -305,6 +332,7 @@ export default function Products() {
             <div className="products-quick-cta">
               <Link className="btn btn--hero" to="/contact">Get a Quote</Link>
               <Link className="btn btn--ghost" to={`/products#pvc`}>Jump to Details</Link>
+              <Link className="btn btn--ghost" to="/projects">See Projects</Link>
             </div>
           </div>
         </div>
@@ -379,6 +407,7 @@ export default function Products() {
         </div>
       </section>
     </section>
+    </>
   )
 }
 
