@@ -10,7 +10,7 @@ const sitemapRoutes = [
   { url: `${BASE_URL}/`, changefreq: 'weekly', priority: 1.0 },
   { url: `${BASE_URL}/products`, changefreq: 'weekly', priority: 0.9 },
   { url: `${BASE_URL}/projects`, changefreq: 'weekly', priority: 0.8 },
-  { url: `${BASE_URL}/additional-services`, changefreq: 'weekly', priority: 0.8 },
+  { url: `${BASE_URL}/services`, changefreq: 'weekly', priority: 0.8 },
   { url: `${BASE_URL}/about`, changefreq: 'weekly', priority: 0.7 },
   { url: `${BASE_URL}/contact`, changefreq: 'weekly', priority: 0.7 },
 ]
@@ -21,16 +21,13 @@ export default defineConfig({
     sitemap({
       // Generates: dist/sitemap.xml
       hostname: BASE_URL,
-      include: sitemapRoutes.map((r) => r.url.replace(BASE_URL, '')),
-      // Ensure the sitemap is generated even for SPAs.
-      // vite-plugin-sitemap will create valid XML.
+      // Use a single source of truth (no mixed include/urls), to avoid plugin errors.
+      urls: sitemapRoutes,
       defaults: {
         changefreq: 'weekly',
         priority: 0.7,
         lastmod: new Date().toISOString().slice(0, 10),
       },
-      // If the plugin version you have supports custom urls, this will be used.
-      urls: sitemapRoutes,
     }) as any,
   ],
 })
