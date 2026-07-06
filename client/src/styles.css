@@ -439,7 +439,8 @@ p {
   position: relative;
   overflow: hidden;
   background: var(--bg-light);
-  padding-top: 24px;
+  padding: 24px;
+  
 }
 
 
@@ -453,6 +454,7 @@ p {
   display: flex;
   align-items: center;
   overflow: hidden;
+  padding: 20px;
 }
 
 .hero-banner::before {
@@ -2497,6 +2499,7 @@ p {
   overflow: hidden;
   background: linear-gradient(135deg, #0E1714 0%, #173128 55%, #214539 100%);
   box-shadow: 0 30px 80px rgba(0,0,0,.18);
+  margin-top: 40px;
 }
 
 .dmac-premium-container {
@@ -2932,9 +2935,26 @@ p {
 .services a,
 .services a:hover,
 .services a:focus,
-.services a:active {
+.services a:active,
+.services a:visited {
   text-decoration: none;
 }
+
+/* Extra vertical spacing after services + before next sections */
+.services {
+  margin-bottom: 36px;
+}
+
+/* Extra spacing after DMAC container */
+.dmac-section-premium {
+  margin-bottom: 80px;
+}
+
+/* Spacing for gallery sections (Satisfied Customers) */
+.gallery-sections {
+  margin-top: 20px;
+}
+
 
 
 /* ===== ACCESSIBILITY ===== */
