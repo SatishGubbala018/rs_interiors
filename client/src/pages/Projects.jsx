@@ -310,16 +310,16 @@ export default function Projects() {
   return (
     <>
       <Helmet>
-        <title>Our Projects | RS Interiors Portfolio - Premium Interior Design Hyderabad</title>
-        <meta name="description" content="Explore RS Interiors' premium interior design projects in Hyderabad. View our portfolio of luxury PVC cupboards, modular kitchens, wardrobes, and custom storage solutions. 500+ projects completed with 98% customer satisfaction." />
+        <title>Our Projects | Best Interior Designers Hyderabad - RS Interiors Portfolio</title>
+        <meta name="description" content="Explore 500+ interior design projects by RS Interiors, the best interior designer in Hyderabad. View our portfolio of PVC cupboards, WPVC wardrobes, modular kitchens, and luxury home interiors. 98% customer satisfaction across Telangana." />
         <link rel="canonical" href="https://www.rsinteriordesigns.in/projects" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.rsinteriordesigns.in/projects" />
-        <meta property="og:title" content="Our Projects | RS Interiors Portfolio - Premium Interior Design Hyderabad" />
-        <meta property="og:description" content="Explore 500+ premium interior design projects in Hyderabad. Luxury PVC cupboards, modular kitchens, wardrobes, and custom solutions with 98% customer satisfaction." />
+        <meta property="og:title" content="Our Projects | Best Interior Designers Hyderabad - RS Interiors Portfolio" />
+        <meta property="og:description" content="Explore 500+ interior design projects by RS Interiors, the best interior designer in Hyderabad. PVC cupboards, WPVC wardrobes, modular kitchens, and luxury home interiors." />
         <meta property="og:image" content="https://www.rsinteriordesigns.in/src/assets/logo.png" />
         <meta property="og:site_name" content="RS Interiors" />
         <meta property="og:locale" content="en_IN" />
@@ -327,8 +327,8 @@ export default function Projects() {
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:url" content="https://www.rsinteriordesigns.in/projects" />
-        <meta name="twitter:title" content="Our Projects | RS Interiors Portfolio - Premium Interior Design Hyderabad" />
-        <meta name="twitter:description" content="Explore 500+ premium interior design projects in Hyderabad. Luxury PVC cupboards, modular kitchens, wardrobes." />
+        <meta name="twitter:title" content="Our Projects | Best Interior Designers Hyderabad - RS Interiors Portfolio" />
+        <meta name="twitter:description" content="Explore 500+ interior design projects by RS Interiors, the best interior designer in Hyderabad. PVC cupboards, WPVC wardrobes, modular kitchens." />
         <meta name="twitter:image" content="https://www.rsinteriordesigns.in/src/assets/logo.png" />
       </Helmet>
 
@@ -349,22 +349,7 @@ export default function Projects() {
             >
               Our Premium Projects
             </motion.h1>
-            <motion.p 
-              className="projects-hero-subtitle"
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2, ease: [0.34, 1.56, 0.64, 1] }}
-            >
-              Transforming spaces with luxury PVC cupboards, modular kitchens, and custom interiors. 
-              Explore our portfolio of 500+ premium installations across Hyderabad.
-            </motion.p>
-
-            {/* Animated Statistics */}
-            <div className="stats-container">
-              {STATS.map((stat, index) => (
-                <StatCard key={index} stat={stat} isVisible={isStatsVisible} />
-              ))}
-            </div>
+          
           </div>
         </div>
 

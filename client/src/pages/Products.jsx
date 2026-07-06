@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 const ASSETS = {
   pvc: new URL('../assets/pvc.png', import.meta.url).toString(),
-  wpvc: new URL('../assets/wpvc.png', import.meta.url).toString(),
+  wpc: new URL('../assets/wpc.png', import.meta.url).toString(),
   layer3: new URL('../assets/3layer.png', import.meta.url).toString(),
   gallery1: new URL('../assets/gallery-1.jpg', import.meta.url).toString(),
   sample1: new URL('../assets/sample_1.jpeg', import.meta.url).toString(),
@@ -83,16 +83,16 @@ export default function Products() {
   return (
     <>
       <Helmet>
-        <title>PVC Cupboards Hyderabad | Modular Kitchen & Wardrobe Design | RS Interiors Products</title>
-        <meta name="description" content="Explore RS Interiors' premium PVC cupboards, WPVC wardrobes, and modular kitchen cabinets in Hyderabad. High-quality, durable, and stylish interior solutions for your home." />
+<title>PVC Cupboards Hyderabad | WPC Wardrobes & Modular Kitchen | Best Interior Designers</title>
+<meta name="description" content="RS Interiors offers premium PVC cupboards, WPC wardrobes, and modular kitchen cabinets in Hyderabad. Best interior designers for affordable PVC interiors, Demac 3-layer PVC, and luxury home interiors. 500+ projects completed." />
         <link rel="canonical" href="https://www.rsinteriordesigns.in/products" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.rsinteriordesigns.in/products" />
-        <meta property="og:title" content="PVC Cupboards Hyderabad | Modular Kitchen & Wardrobe Design | RS Interiors Products" />
-        <meta property="og:description" content="Explore RS Interiors' premium PVC cupboards, WPVC wardrobes, and modular kitchen cabinets in Hyderabad. High-quality, durable, and stylish interior solutions." />
+<meta property="og:title" content="PVC Cupboards Hyderabad | WPC Wardrobes & Modular Kitchen | Best Interior Designers" />
+<meta property="og:description" content="RS Interiors offers premium PVC cupboards, WPC wardrobes, and modular kitchen cabinets in Hyderabad. Best interior designers for affordable PVC interiors." />
         <meta property="og:image" content="https://www.rsinteriordesigns.in/src/assets/logo.png" />
         <meta property="og:site_name" content="RS Interiors" />
         <meta property="og:locale" content="en_IN" />
@@ -100,8 +100,8 @@ export default function Products() {
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:url" content="https://www.rsinteriordesigns.in/products" />
-        <meta name="twitter:title" content="PVC Cupboards Hyderabad | Modular Kitchen & Wardrobe Design | RS Interiors Products" />
-        <meta name="twitter:description" content="Explore RS Interiors' premium PVC cupboards, WPVC wardrobes, and modular kitchen cabinets in Hyderabad." />
+<meta name="twitter:title" content="PVC Cupboards Hyderabad | WPC Wardrobes & Modular Kitchen | Best Interior Designers" />
+<meta name="twitter:description" content="RS Interiors offers premium PVC cupboards, WPC wardrobes, and modular kitchen cabinets in Hyderabad. Best interior designers for affordable PVC interiors." />
         <meta name="twitter:image" content="https://www.rsinteriordesigns.in/src/assets/logo.png" />
       </Helmet>
       
@@ -112,16 +112,15 @@ export default function Products() {
         transition={{ duration: 0.45 }}
         className="products-hero"
       >
-        <h1>Demac 3-layer PVC & WPVC Products</h1>
+<h1><span className="seo-keyword">PVC Cupboards</span>, <span className="seo-keyword">WPC Wardrobes</span> & Modular Kitchen - <span className="seo-keyword">Best Interior Designers Hyderabad</span></h1>
         <p className="lead">
-          Full, in-depth product details for <b>Demac 3-layer PVC </b> <b>PVC</b>, <b>WPVC</b>, and —with image galleries and
-          selection guidance. Looking for complete home interiors? Visit our <Link to="/services" className="content-link">additional services</Link> page.
+RS Interiors is the best interior designer in Hyderabad for premium <span className="seo-keyword">PVC cupboards</span>, <span className="seo-keyword">WPC wardrobes</span>, and modular kitchens. Full, in-depth product details for <b>Demac 3-layer PVC</b>, <b>PVC</b>, and <b>WPC</b> with image galleries and selection guidance.
         </p>
       </motion.header>
 
       <nav className="products-sticky-nav" aria-label="Product sections">
         <a href="#pvc">PVC</a>
-        <a href="#wpvc">WPVC</a>
+        <a href="#wpc">WPC</a>
         <a href="#demac-3layer">Demac 3-layer PVC</a>
       </nav>
 
@@ -133,9 +132,9 @@ export default function Products() {
 
           <div className="products-block__content">
             <div className="eyebrow">Demac • 3-Layer PVC</div>
-            <h3 className="products-title">Demac 3-Layer PVC Cabinets</h3>
+            <h3 className="products-title">Demac 3-Layer PVC Cabinets - Premium Modular Kitchen Hyderabad</h3>
             <p className="lead products-lead">
-              Superior stability, strength and long-term performance—ideal for high-usage cabinetry.
+              RS Interiors is the best interior designer in Hyderabad for Demac 3-layer PVC cabinets. Superior stability, strength and long-term performance—ideal for high-usage cabinetry and modular kitchens.
             </p>
 
             <div className="products-quick-cta">
@@ -238,22 +237,22 @@ export default function Products() {
         </div>
       </section>
 
-      <section className="products-block" id="wpvc">
+      <section className="products-block" id="wpc">
         <div className="products-block__top">
           <div className="products-block__media" aria-hidden="true">
-            <img src={ASSETS.wpvc} alt="WPVC" />
+            <img src={ASSETS.wpc} alt="WPC" />
           </div>
 
           <div className="products-block__content">
             <div className="eyebrow">WPVC</div>
-            <h3 className="products-title">WPVC Wardrobes & Storage</h3>
+            <h3 className="products-title">WPVC Wardrobes & Storage - Premium PVC Interiors Hyderabad</h3>
             <p className="lead products-lead">
-              Enhanced durability with premium textures—built for long-term strength and a refined appearance.
+              RS Interiors is the leading interior design company in Hyderabad for WPVC wardrobes. Enhanced durability with premium textures—built for long-term strength and a refined appearance.
             </p>
 
             <div className="products-quick-cta">
               <Link className="btn btn--hero" to="/contact">Get a Quote</Link>
-              <Link className="btn btn--ghost" to={`/products#wpvc`}>Jump to Details</Link>
+              <Link className="btn btn--ghost" to={`/products#wpc`}>Jump to Details</Link>
               <Link className="btn btn--ghost" to="/projects">See Projects</Link>
             </div>
           </div>
@@ -324,9 +323,9 @@ export default function Products() {
 
           <div className="products-block__content">
             <div className="eyebrow">PVC</div>
-            <h3 className="products-title">PVC Cabinets &amp; Cupboards</h3>
+            <h3 className="products-title">PVC Cabinets & Cupboards - Best Interior Designers Hyderabad</h3>
             <p className="lead products-lead">
-              Glossy, water-resistant and easy-clean PVC interiors designed for everyday kitchens and bathrooms.
+              RS Interiors is the affordable interior designer in Hyderabad for PVC cupboards. Glossy, water-resistant and easy-clean PVC interiors designed for everyday kitchens and bathrooms.
             </p>
 
             <div className="products-quick-cta">

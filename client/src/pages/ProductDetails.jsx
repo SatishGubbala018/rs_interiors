@@ -25,11 +25,11 @@ const PRODUCT_MAP = {
       'Reliable performance when sealed and installed correctly'
     ]
   },
-  wpvc: {
-    title: 'WPVC Wardrobes',
-    eyebrow: 'WPVC',
-    image: new URL('../assets/wpvc.png', import.meta.url).toString(),
-    lead: 'WPVC offers enhanced durability with premium textures—built for long-term strength and a premium appearance.',
+  wpc: {
+    title: 'WPC Wardrobes',
+    eyebrow: 'WPC',
+    image: new URL('../assets/wpc.png', import.meta.url).toString(),
+    lead: 'WPC offers enhanced durability with premium textures—built for long-term strength and a premium appearance.',
     features: [
       'Improved durability for daily wear & tear',
       'Premium surface textures and refined finishing options',
@@ -86,8 +86,8 @@ export default function ProductDetails() {
   const key = (type || '').toLowerCase()
   const data = PRODUCT_MAP[key] || PRODUCT_MAP['pvc']
 
-  const pageTitle = `${data.title} Hyderabad | RS Interiors`
-  const pageDesc = `Explore ${data.title} by RS Interiors in Hyderabad. ${data.lead} Premium quality PVC, WPVC, and Demac 3-layer interiors for your home.`
+  const pageTitle = `${data.title} Hyderabad | Best Interior Designers | RS Interiors`
+  const pageDesc = `RS Interiors is the best interior designer in Hyderabad for ${data.title}. ${data.lead} Affordable PVC interiors, WPVC wardrobes, and modular kitchens. 500+ projects, 10+ years experience.`
 
   return (
     <>
@@ -117,12 +117,12 @@ export default function ProductDetails() {
       <section className="page product-details">
       <div className="product-hero">
         <div className="product-hero__media">
-          <img src={data.image} alt={data.title} />
+          <img src={data.image} alt={`${data.title} Hyderabad - Best Interior Designers`} />
         </div>
 
         <div className="product-hero__content">
           <div className="eyebrow">{data.eyebrow} • Details</div>
-          <h2 className="services-title product-title">{data.title}</h2>
+          <h2 className="services-title product-title">{data.title} - <span className="seo-keyword">Best Interior Designers Hyderabad</span></h2>
           <p className="lead">{data.lead}</p>
 
           <div className="product-actions">

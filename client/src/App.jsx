@@ -10,14 +10,14 @@ import About from './pages/About'
 import ProductDetails from './pages/ProductDetails'
 import AdditionalServices from './pages/AdditionalServices'
 
-const BASE_URL = 'https://rsinteriordesigns.in'
+const BASE_URL = 'https://www.rsinteriordesigns.in'
 
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "@id": BASE_URL + "#business",
   "name": "RS Interiors",
-  "description": "RS Interiors provides premium PVC cupboards, modular kitchens, wardrobes, wallpaper installation, curtains and blinds, invisible grills, metal sliding safety doors, and complete home interior design services in Hyderabad and Telangana.",
+  "description": "RS Interiors is the best interior designer in Hyderabad for PVC cupboards, modular kitchens, WPVC wardrobes, and luxury home interiors. 500+ projects, 10+ years experience, affordable interior design solutions.",
   "url": BASE_URL,
   "telephone": ["+919640400030", "+917680001556"],
   "email": "inforsinteriordesgins@gmail.com",
@@ -92,33 +92,33 @@ const jsonLd = {
 
 const seoData = {
   home: {
-    title: 'RS Interiors | Premium PVC & WPVC Cupboards, Kitchen Cabinets, Wardrobes',
-    description: 'RS Interiors specializes in premium Demac 3 Layer PVC & WPVC cupboards, kitchen cabinets, and wardrobes in Telangana. Transform your space with our custom interior solutions.',
+    title: 'Best Interior Designers Hyderabad | PVC Interiors, WPVC Wardrobes & Modular Kitchen | RS Interiors',
+    description: 'RS Interiors is the best interior designer in Hyderabad for PVC interiors, WPVC wardrobes, modular kitchens, and luxury home interiors. 500+ projects, 10+ years experience, affordable prices.',
     image: `${BASE_URL}/src/assets/logo.png`
   },
   products: {
-    title: 'Our Products | RS Interiors - PVC Cupboards & Kitchen Cabinets',
-    description: 'Explore our range of premium PVC cupboards, WPVC kitchen cabinets, and custom wardrobes. High-quality, durable, and stylish interior solutions.',
+    title: 'PVC Cupboards Hyderabad | WPVC Wardrobes & Modular Kitchen | Best Interior Designers',
+    description: 'RS Interiors offers premium PVC cupboards, WPVC wardrobes, and modular kitchen cabinets in Hyderabad. Best interior designers for affordable PVC interiors, Demac 3-layer PVC, and luxury home interiors.',
     image: `${BASE_URL}/src/assets/logo.png`
   },
   projects: {
-    title: 'Our Projects | RS Interiors Portfolio',
-    description: 'View our completed interior design projects including kitchen cabinets, wardrobes, and custom storage solutions. Quality craftsmanship in every project.',
+    title: 'Our Projects | Best Interior Designers Hyderabad - RS Interiors Portfolio',
+    description: 'Explore 500+ interior design projects by RS Interiors, the best interior designer in Hyderabad. View our portfolio of PVC cupboards, WPVC wardrobes, modular kitchens, and luxury home interiors.',
     image: `${BASE_URL}/src/assets/logo.png`
   },
   additionalServices: {
-    title: 'Additional Services | RS Interiors',
-    description: 'Discover our additional interior services including custom designs, installations, and maintenance. Complete interior solutions for your home and office.',
+    title: 'Additional Services | Best Interior Designers Hyderabad - RS Interiors PVC & WPVC',
+    description: 'RS Interiors, the best interior designer in Hyderabad, offers wallpaper installation, curtains, invisible grills, safety doors, wood flooring, and complete home interior solutions with PVC cupboards and modular kitchens.',
     image: `${BASE_URL}/src/assets/logo.png`
   },
   about: {
-    title: 'About Us | RS Interiors - Your Trusted Interior Design Partner',
-    description: 'Learn about RS Interiors, our mission, and our commitment to delivering premium PVC and WPVC interior solutions. Quality, durability, and customer satisfaction.',
+    title: 'About Us | Best Interior Designers Hyderabad - RS Interiors PVC & WPVC Experts',
+    description: 'RS Interiors is the best interior designer in Hyderabad with 10+ years experience in PVC interiors, WPVC wardrobes, modular kitchens, and luxury home interiors. 500+ projects, affordable prices.',
     image: `${BASE_URL}/src/assets/logo.png`
   },
   contact: {
-    title: 'Contact Us | RS Interiors - Get In Touch',
-    description: 'Contact RS Interiors for premium PVC cupboards, kitchen cabinets, and wardrobes. Call us at +919640400030 or visit our showroom in Telangana.',
+    title: 'Contact Us | Best Interior Designers Hyderabad - RS Interiors PVC & WPVC',
+    description: 'Contact RS Interiors, the best interior designer in Hyderabad, for premium PVC cupboards, WPVC wardrobes, modular kitchens, and luxury home interiors. Call +919640400030 for free consultation.',
     image: `${BASE_URL}/src/assets/logo.png`
   }
 }

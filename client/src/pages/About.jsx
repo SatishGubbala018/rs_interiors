@@ -72,16 +72,16 @@ export default function About() {
   return (
     <>
       <Helmet>
-        <title>About Us | RS Interiors - Interior Designers Hyderabad & Telangana</title>
-        <meta name="description" content="Learn about RS Interiors, your trusted interior design partner in Hyderabad and Telangana. We specialize in premium PVC cupboards, modular kitchens, wardrobes, and complete home interior solutions with 10+ years of experience." />
+        <title>About Us | Best Interior Designers Hyderabad - RS Interiors PVC & WPVC Experts</title>
+        <meta name="description" content="RS Interiors is the best interior designer in Hyderabad with 10+ years experience in PVC interiors, WPVC wardrobes, modular kitchens, and luxury home interiors. 500+ projects, affordable prices, trusted by homeowners across Telangana." />
         <link rel="canonical" href="https://www.rsinteriordesigns.in/about" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.rsinteriordesigns.in/about" />
-        <meta property="og:title" content="About Us | RS Interiors - Interior Designers Hyderabad & Telangana" />
-        <meta property="og:description" content="Learn about RS Interiors, your trusted interior design partner in Hyderabad and Telangana. We specialize in premium PVC cupboards, modular kitchens, wardrobes, and complete home interior solutions." />
+        <meta property="og:title" content="About Us | Best Interior Designers Hyderabad - RS Interiors PVC & WPVC Experts" />
+        <meta property="og:description" content="Learn about RS Interiors, the best interior designer in Hyderabad for PVC cupboards, modular kitchens, wardrobes, and complete home interior solutions." />
         <meta property="og:image" content="https://www.rsinteriordesigns.in/src/assets/logo.png" />
         <meta property="og:site_name" content="RS Interiors" />
         <meta property="og:locale" content="en_IN" />
@@ -89,8 +89,8 @@ export default function About() {
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:url" content="https://www.rsinteriordesigns.in/about" />
-        <meta name="twitter:title" content="About Us | RS Interiors - Interior Designers Hyderabad & Telangana" />
-        <meta name="twitter:description" content="Learn about RS Interiors, your trusted interior design partner in Hyderabad and Telangana. We specialize in premium PVC cupboards, modular kitchens, wardrobes, and complete home interior solutions." />
+        <meta name="twitter:title" content="About Us | Best Interior Designers Hyderabad - RS Interiors PVC & WPVC Experts" />
+        <meta name="twitter:description" content="Learn about RS Interiors, the best interior designer in Hyderabad for PVC cupboards, modular kitchens, wardrobes, and complete home interior solutions." />
         <meta name="twitter:image" content="https://www.rsinteriordesigns.in/src/assets/logo.png" />
       </Helmet>
       
@@ -109,20 +109,20 @@ export default function About() {
           transition={{ duration: 0.8, ease: [0.34, 1.56, 0.64, 1] }}
         >
           <div className="eyebrow eyebrow--alt">About RS Interiors</div>
-          <h1 className="overlay-title small">Your Trusted Interior Designers in Hyderabad & Telangana</h1>
+          <h1 className="overlay-title small">Best Interior Designers Hyderabad | PVC & WPVC Interior Experts</h1>
           <p className="overlay-sub">
-            We build modern PVC &amp; WPC cupboard interiors that deliver durability, aesthetics, and peace of mind.
+            RS Interiors is the leading interior design company in Hyderabad for PVC cupboards, WPVC wardrobes, and modular kitchens. We build modern PVC & WPC cupboard interiors that deliver durability, aesthetics, and peace of mind.
           </p>
         </motion.div>
       </div>
 
       <div className="page">
-        <div className="section-head">
-          <h2 className="services-title">What we stand for</h2>
-          <p className="lead">
-            Every project is driven by the same core values—so you get the right design, delivered on time with strong quality. Explore our <Link to="/products" className="content-link">PVC cupboards</Link>, <Link to="/products/wpvc" className="content-link">WPVC wardrobes</Link>, and <Link to="/projects" className="content-link">completed projects</Link>.
-          </p>
-        </div>
+          <div className="section-head">
+            <h2 className="services-title">Why RS Interiors is the <span className="seo-keyword">Best Interior Designer in Hyderabad</span></h2>
+            <p className="lead">
+              Every project is driven by the same core values—so you get the right design, delivered on time with strong quality. RS Interiors is the affordable interior designer in Hyderabad for <span className="seo-keyword">PVC cupboards</span>, <span className="seo-keyword">WPC wardrobes</span>, and modular kitchens. Explore our <Link to="/products" className="content-link"><span className="seo-keyword">PVC cupboards</span></Link>, <Link to="/products/wpc" className="content-link"><span className="seo-keyword">WPC wardrobes</span></Link>, and <Link to="/projects" className="content-link">completed projects</Link>.
+            </p>
+          </div>
 
         <motion.div
           ref={ref}

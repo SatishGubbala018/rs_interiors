@@ -10,16 +10,16 @@ export default function ContactUs() {
   return (
     <>
       <Helmet>
-        <title>Contact Us | RS Interiors - Get In Touch for PVC Cupboards & Modular Kitchen Hyderabad</title>
-        <meta name="description" content="Contact RS Interiors for premium PVC cupboards, modular kitchens, wardrobes, and home interior design services in Hyderabad. Call +919640400030 or visit our showroom in Telangana." />
+        <title>Contact Us | Interior Designers Hyderabad - RS Interiors PVC & WPVC</title>
+        <meta name="description" content="Contact RS Interiors, the best interior designer in Hyderabad, for premium PVC cupboards, WPVC wardrobes, modular kitchens, and luxury home interiors. Call +919640400030 for free consultation. Affordable interior design solutions in Telangana." />
         <link rel="canonical" href="https://www.rsinteriordesigns.in/contact" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.rsinteriordesigns.in/contact" />
-        <meta property="og:title" content="Contact Us | RS Interiors - Get In Touch for PVC Cupboards & Modular Kitchen Hyderabad" />
-        <meta property="og:description" content="Contact RS Interiors for premium PVC cupboards, modular kitchens, wardrobes, and home interior design services in Hyderabad. Call +919640400030 or visit our showroom." />
+        <meta property="og:title" content="Contact Us | Best Interior Designers Hyderabad - RS Interiors PVC & WPVC" />
+        <meta property="og:description" content="Contact RS Interiors, the best interior designer in Hyderabad, for PVC cupboards, modular kitchens, wardrobes, and home interior design services. Call +919640400030." />
         <meta property="og:image" content="https://www.rsinteriordesigns.in/src/assets/logo.png" />
         <meta property="og:site_name" content="RS Interiors" />
         <meta property="og:locale" content="en_IN" />
@@ -27,14 +27,14 @@ export default function ContactUs() {
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:url" content="https://www.rsinteriordesigns.in/contact" />
-        <meta name="twitter:title" content="Contact Us | RS Interiors - Get In Touch for PVC Cupboards & Modular Kitchen Hyderabad" />
-        <meta name="twitter:description" content="Contact RS Interiors for premium PVC cupboards, modular kitchens, wardrobes, and home interior design services in Hyderabad." />
+        <meta name="twitter:title" content="Contact Us | Best Interior Designers Hyderabad - RS Interiors PVC & WPVC" />
+        <meta name="twitter:description" content="Contact RS Interiors, the best interior designer in Hyderabad, for PVC cupboards, modular kitchens, wardrobes, and home interior design services." />
         <meta name="twitter:image" content="https://www.rsinteriordesigns.in/src/assets/logo.png" />
       </Helmet>
       
       <section className="page contact-page">
-        <h1>Contact RS Interiors - Interior Designers Hyderabad</h1>
-        <p className="lead">Reach us instantly through WhatsApp, Gmail, or Instagram.</p>
+        <h1>Contact - RS Interiors PVC & WPVC</h1>
+        <p className="lead">Contact RS Interiors, the <span className="seo-keyword">best interior designer in Hyderabad</span> for <span className="seo-keyword">PVC cupboards</span>, <span className="seo-keyword">WPVC wardrobes</span>, and modular kitchens. Reach us instantly through WhatsApp, Gmail, or Instagram for free consultation.</p>
 
         <div className="contact-options">
           <a
@@ -90,10 +90,10 @@ export default function ContactUs() {
 
         <div className="contact-fallback">
           <div className="contact-fallback__item">
-            <b>Mobile:</b> <a className="footer-link" href="tel:9640400030">+919640400030</a>
+            <b>Mobile:</b> <a className="contact-num" href="tel:9640400030">+919640400030</a>
           </div>
           <div className="contact-fallback__item">
-            <b>Mobile:</b> <a className="footer-link" href="tel:+1768000001556">+91768000001556</a>
+            <b>Mobile:</b> <a className="contact-num" href="tel:+1768000001556">+91768000001556</a>
           </div>
         </div>
 

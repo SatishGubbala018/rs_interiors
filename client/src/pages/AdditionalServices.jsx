@@ -8,16 +8,16 @@ export default function AdditionalServices() {
   return (
     <>
       <Helmet>
-        <title>Additional Services | RS Interiors - Wallpaper, Curtains, Invisible Grills & Safety Doors Hyderabad</title>
-        <meta name="description" content="RS Interiors offers additional services including wallpaper installation, curtains and blinds, invisible grills, metal sliding safety doors, wood flooring, and pleated sliding mesh in Hyderabad and Telangana." />
+        <title>Additional Services | Best Interior Designers Hyderabad - RS Interiors PVC & WPVC</title>
+        <meta name="description" content="RS Interiors, the best interior designer in Hyderabad, offers wallpaper installation, curtains, invisible grills, safety doors, wood flooring, and pleated sliding mesh. Complete home interior solutions with PVC cupboards, WPVC wardrobes, and modular kitchens. 500+ projects." />
         <link rel="canonical" href="https://www.rsinteriordesigns.in/services" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.rsinteriordesigns.in/services" />
-        <meta property="og:title" content="Additional Services | RS Interiors - Wallpaper, Curtains, Invisible Grills & Safety Doors Hyderabad" />
-        <meta property="og:description" content="RS Interiors offers additional services including wallpaper installation, curtains and blinds, invisible grills, metal sliding safety doors, wood flooring, and pleated sliding mesh in Hyderabad." />
+        <meta property="og:title" content="Additional Services | Best Interior Designers Hyderabad - RS Interiors PVC & WPVC" />
+        <meta property="og:description" content="RS Interiors, the best interior designer in Hyderabad, offers wallpaper, curtains, invisible grills, safety doors, and complete PVC interior solutions." />
         <meta property="og:image" content="https://www.rsinteriordesigns.in/src/assets/logo.png" />
         <meta property="og:site_name" content="RS Interiors" />
         <meta property="og:locale" content="en_IN" />
@@ -25,34 +25,22 @@ export default function AdditionalServices() {
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:url" content="https://www.rsinteriordesigns.in/services" />
-        <meta name="twitter:title" content="Additional Services | RS Interiors - Wallpaper, Curtains, Invisible Grills & Safety Doors Hyderabad" />
-        <meta name="twitter:description" content="RS Interiors offers additional services including wallpaper installation, curtains and blinds, invisible grills, metal sliding safety doors in Hyderabad." />
+        <meta name="twitter:title" content="Additional Services | Best Interior Designers Hyderabad - RS Interiors PVC & WPVC" />
+        <meta name="twitter:description" content="RS Interiors, the best interior designer in Hyderabad, offers wallpaper, curtains, invisible grills, safety doors, and complete PVC interior solutions." />
         <meta name="twitter:image" content="https://www.rsinteriordesigns.in/src/assets/logo.png" />
       </Helmet>
       
       <section className="page page-additional-services">
-        <div className="page-banner" style={{ backgroundImage: `url(${heroImg})` }}>
-          <div className="banner-overlay">
-            <div className="eyebrow eyebrow--alt">Interior Solutions</div>
-            <h1 className="overlay-title">Premium Finishes & Safety Upgrades</h1>
-            <p className="overlay-sub">
-              Pleated sliding mesh, metal sliding safety doors, invisible grills, wood flooring, curtains & blinds,
-              and wallpaper—crafted for a clean look, better ventilation, and long-lasting performance.
-            </p>
-            <div className="banner-cta">
-              <Link to="/contact" className="btn btn--hero">
-                Get a Free Consultation
-              </Link>
-            </div>
-          </div>
+        <div className="page-banner pb-2" style={{ backgroundImage: `url(${heroImg})` }}>
+         
         </div>
 
         <div className="page">
           <div className="section-head">
             <div className="eyebrow eyebrow--alt">Our Services</div>
-            <h2 className="services-title accent5-heading">Additional Services we Install</h2>
+            <h2 className="services-title accent5-heading">Additional Services </h2>
           <p className="lead services-lead">
-            Modern solutions designed to match interiors while keeping your space secure, comfortable, and stylish. Looking for custom interiors? Explore our <Link to="/products" className="content-link">PVC cupboards</Link> and <Link to="/products/wpvc" className="content-link">WPVC wardrobes</Link>.
+            RS Interiors is the leading interior design company in Hyderabad for complete home interiors. Modern solutions designed to match interiors while keeping your space secure, comfortable, and stylish. Looking for custom interiors? Explore our <Link to="/products" className="content-link"><span className="seo-keyword">PVC cupboards</span></Link> and <Link to="/products/wpc" className="content-link"><span className="seo-keyword">WPC wardrobes</span></Link>.
           </p>
           </div>
 
