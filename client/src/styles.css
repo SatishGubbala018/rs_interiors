@@ -2917,14 +2917,25 @@ p {
     font-size: 14px;
   }
 
+  /* Home mobile: ensure main heading is not smaller than paragraph */
   .hero-title {
-    font-size: 1.75rem;
+    font-size: 1.9rem;
+    line-height: 1.1;
   }
 
   .projects-hero-title {
     font-size: 1.75rem;
   }
 }
+
+/* Home page services links: remove underline */
+.services a,
+.services a:hover,
+.services a:focus,
+.services a:active {
+  text-decoration: none;
+}
+
 
 /* ===== ACCESSIBILITY ===== */
 .filter-btn:focus-visible,
