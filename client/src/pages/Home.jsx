@@ -154,7 +154,7 @@ export default function Home(){
   <span className="seo-keyword">Best Interior Designers Hyderabad</span> | <span className="highlight">Premium</span> <span className="seo-keyword">WPC</span> Interiors | <span className="seo-keyword">RS Interiors</span>
               </h1>
               <p className="overlay-sub hero-sub">
-                RS Interiors is the leading interior design company in Hyderabad for <span className="seo-keyword">PVC cupboards</span>, <span className="seo-keyword">WPC wardrobes</span>, and modular kitchens. Demac 3-layer system designed for superior stability, strength and long-term performance. Explore our <Link to="/products" className="content-link"><span className="seo-keyword">PVC cupboards</span></Link>, <Link to="/products/wpc" className="content-link"><span className="seo-keyword">WPC wardrobes</span></Link>
+                RS Interiors is the leading interior design company in Hyderabad for <span className="seo-keyword">PVC cupboards</span>, <span className="seo-keyword">WPC wardrobes</span>, and modular kitchens. Explore our <Link to="/products" className="content-link"><span className="seo-keyword">PVC cupboards</span></Link>, <Link to="/products/wpc" className="content-link"><span className="seo-keyword">WPC wardrobes</span></Link>
               </p>
               <div className="banner-cta">
                 <Link to="/products" className="btn btn--hero">Explore Products</Link>
