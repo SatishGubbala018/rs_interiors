@@ -4,6 +4,7 @@ This repository contains a minimal full-stack demo (Express API backend + Vite R
 
 ## Setup (Windows PowerShell)
 
+
 1. Install dependencies for server and client:
 
 ```powershell
