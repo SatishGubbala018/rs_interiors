@@ -72,15 +72,16 @@ export default function About() {
   return (
     <>
       <Helmet>
-        <title>About Us | Best Interior Designers Hyderabad - RS Interiors PVC & WPVC Experts</title>
+        <title>About RS Interiors Hyderabad | PVC & WPVC Interior Design Experts</title>
         <meta name="description" content="RS Interiors is the best interior designer in Hyderabad with 10+ years experience in PVC interiors, WPVC wardrobes, modular kitchens, and luxury home interiors. 500+ projects, affordable prices, trusted by homeowners across Telangana." />
+        <meta name="keywords" content="About RS Interiors Hyderabad, Best Interior Designers Hyderabad, Interior Designers Hyderabad, PVC Interiors Hyderabad, WPVC Interiors Hyderabad, RS Interiors Hyderabad, Modular Kitchen Hyderabad" />
         <link rel="canonical" href="https://www.rsinteriordesigns.in/about" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.rsinteriordesigns.in/about" />
-        <meta property="og:title" content="About Us | Best Interior Designers Hyderabad - RS Interiors PVC & WPVC Experts" />
+        <meta property="og:title" content="About RS Interiors Hyderabad | PVC & WPVC Interior Design Experts" />
         <meta property="og:description" content="Learn about RS Interiors, the best interior designer in Hyderabad for PVC cupboards, modular kitchens, wardrobes, and complete home interior solutions." />
         <meta property="og:image" content="https://www.rsinteriordesigns.in/src/assets/logo.png" />
         <meta property="og:site_name" content="RS Interiors" />
@@ -89,7 +90,7 @@ export default function About() {
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:url" content="https://www.rsinteriordesigns.in/about" />
-        <meta name="twitter:title" content="About Us | Best Interior Designers Hyderabad - RS Interiors PVC & WPVC Experts" />
+        <meta name="twitter:title" content="About RS Interiors Hyderabad | PVC & WPVC Interior Design Experts" />
         <meta name="twitter:description" content="Learn about RS Interiors, the best interior designer in Hyderabad for PVC cupboards, modular kitchens, wardrobes, and complete home interior solutions." />
         <meta name="twitter:image" content="https://www.rsinteriordesigns.in/src/assets/logo.png" />
       </Helmet>

@@ -17,7 +17,7 @@ const jsonLd = {
   "@type": "LocalBusiness",
   "@id": BASE_URL + "#business",
   "name": "RS Interiors",
-  "description": "RS Interiors is the best interior designer in Hyderabad for PVC cupboards, modular kitchens, WPVC wardrobes, and luxury home interiors. 500+ projects, 10+ years experience, affordable interior design solutions.",
+  "description": "RS Interiors is the leading interior designer in Hyderabad for WPC Interiors, WPVC wardrobes, PVC cupboards, modular kitchens, and luxury home interiors. 500+ projects, 10+ years experience, affordable interior design solutions.",
   "url": BASE_URL,
   "telephone": ["+919640400030", "+917680001556"],
   "email": "inforsinteriordesgins@gmail.com",
@@ -58,32 +58,32 @@ const jsonLd = {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "PVC Cupboards",
-          "description": "Premium PVC cupboards and wardrobes for modern homes"
+          "name": "PVC Cupboards Hyderabad",
+          "description": "Premium PVC cupboards and wardrobes for modern homes in Hyderabad"
         }
       },
       {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "Modular Kitchen",
-          "description": "Custom modular kitchen designs with Demac 3-layer PVC"
+          "name": "WPVC Wardrobes Hyderabad",
+          "description": "Custom WPVC wardrobes with premium finishes in Hyderabad"
         }
       },
       {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "Wardrobe Design",
-          "description": "Custom wardrobe designs in PVC, WPVC, and Demac 3-layer"
+          "name": "Modular Kitchen Hyderabad",
+          "description": "Custom modular kitchen designs with Demac 3-layer PVC in Hyderabad"
         }
       },
       {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "Home Interior Design",
-          "description": "Complete home interior design services in Hyderabad"
+          "name": "WPC Interiors Hyderabad",
+          "description": "Premium WPC Interiors and PVC Interiors Hyderabad for modern homes"
         }
       }
     ]
@@ -181,7 +181,7 @@ export default function App() {
           <div className="footer-inner">
 <div className="footer-col">
             <div className="footer-brand">RS Interiors</div>
-            <div className="footer-muted">Demac 3 Layer PVC & WPVC Cupboards • Kitchen Cabinets • Wardrobes</div>
+            <div className="footer-muted">Demac 3 Layer PVC & WPC Cupboards • Kitchen Cabinets • Wardrobes</div>
           </div>
 
           <div className="footer-col">

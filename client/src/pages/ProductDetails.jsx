@@ -86,14 +86,15 @@ export default function ProductDetails() {
   const key = (type || '').toLowerCase()
   const data = PRODUCT_MAP[key] || PRODUCT_MAP['pvc']
 
-  const pageTitle = `${data.title} Hyderabad | Best Interior Designers | RS Interiors`
-  const pageDesc = `RS Interiors is the best interior designer in Hyderabad for ${data.title}. ${data.lead} Affordable PVC interiors, WPVC wardrobes, and modular kitchens. 500+ projects, 10+ years experience.`
+  const pageTitle = `${data.title} Hyderabad | WPVC & PVC Interiors | RS Interiors`
+  const pageDesc = `RS Interiors is the best interior designer in Hyderabad for ${data.title}. ${data.lead} Premium PVC Interiors Hyderabad, WPVC wardrobes, and modular kitchens. 500+ projects, 10+ years experience.`
 
   return (
     <>
       <Helmet>
         <title>{pageTitle}</title>
         <meta name="description" content={pageDesc} />
+        <meta name="keywords" content={`${data.title} Hyderabad, Best Interior Designers Hyderabad, Interior Designers Hyderabad, PVC Cupboards Hyderabad, WPVC Wardrobes Hyderabad, RS Interiors Hyderabad, Modular Kitchen Hyderabad`} />
         <link rel="canonical" href={`https://www.rsinteriordesigns.in/products/${key}`} />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         

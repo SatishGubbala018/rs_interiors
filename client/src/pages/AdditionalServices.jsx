@@ -68,11 +68,12 @@ export default function AdditionalServices() {
   return (
     <>
       <Helmet>
-        <title>Additional Services | Best Interior Designers Hyderabad - RS Interiors PVC & WPVC</title>
+        <title>Interior Design Services Hyderabad | RS Interiors PVC & WPVC</title>
         <meta
           name="description"
-          content="RS Interiors, the best interior designer in Hyderabad, offers wallpaper installation, curtains, invisible grills, safety doors, wood flooring, and pleated sliding mesh. Complete home interior solutions with PVC cupboards, WPVC wardrobes, and modular kitchens. 500+ projects."
+          content="RS Interiors, the best interior designer in Hyderabad, offers wallpaper, curtains, invisible grills, safety doors, wood flooring, and pleated sliding mesh. Complete home interior solutions with PVC cupboards, WPVC wardrobes, and modular kitchens. 500+ projects."
         />
+        <meta name="keywords" content="Interior Design Services Hyderabad, RS Interiors Hyderabad, Best Interior Designers Hyderabad, PVC Cupboards Hyderabad, WPVC Wardrobes Hyderabad, Modular Kitchen Hyderabad, PVC Interiors Hyderabad" />
         <link rel="canonical" href="https://www.rsinteriordesigns.in/services" />
         <meta
           name="robots"
@@ -84,7 +85,7 @@ export default function AdditionalServices() {
         <meta property="og:url" content="https://www.rsinteriordesigns.in/services" />
         <meta
           property="og:title"
-          content="Additional Services | Best Interior Designers Hyderabad - RS Interiors PVC & WPVC"
+          content="Interior Design Services Hyderabad | RS Interiors PVC & WPVC"
         />
         <meta
           property="og:description"
@@ -99,7 +100,7 @@ export default function AdditionalServices() {
         <meta name="twitter:url" content="https://www.rsinteriordesigns.in/services" />
         <meta
           name="twitter:title"
-          content="Additional Services | Best Interior Designers Hyderabad - RS Interiors PVC & WPVC"
+          content="Interior Design Services Hyderabad | RS Interiors PVC & WPVC"
         />
         <meta
           name="twitter:description"

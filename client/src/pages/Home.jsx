@@ -99,17 +99,17 @@ export default function Home(){
   return (
     <>
       <Helmet>
-
-        <title>Best Interior Designers Hyderabad | PVC Interiors, WPC Wardrobes & Modular Kitchen | RS Interiors</title>
-        <meta name="description" content="RS Interiors is the best interior designer in Hyderabad for PVC interiors, WPC wardrobes, modular kitchens, and luxury home interiors. Affordable prices, 500+ projects, 10+ years experience. Get free consultation today!" />
-        <link rel="canonical" href="https://www.rsinteriordes igns.in/" />
+        <title>WPC Interiors Hyderabad | Best Interior Designers | RS Interiors</title>
+        <meta name="description" content="RS Interiors is the leading interior designer in Hyderabad for WPC Interiors, WPVC wardrobes, PVC cupboards, and modular kitchens. 500+ projects, 10+ years experience. Get free consultation today!" />
+        <meta name="keywords" content="WPC Interiors Hyderabad, WPVC Interiors Hyderabad, Best Interior Designers Hyderabad, Interior Designers Hyderabad, PVC Cupboards Hyderabad, WPC Cupboards Hyderabad, RS Interiors Hyderabad, Modular Kitchen Hyderabad" />
+        <link rel="canonical" href="https://www.rsinteriordesigns.in/" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.rsinteriordesigns.in/" />
-        <meta property="og:title" content="Best Interior Designers Hyderabad | PVC Interiors, WPC Wardrobes & Modular Kitchen | RS Interiors" />
-        <meta property="og:description" content="RS Interiors is the best interior designer in Hyderabad for PVC interiors, WPC wardrobes, modular kitchens, and luxury home interiors. 500+ projects completed." />
+        <meta property="og:title" content="WPC Interiors Hyderabad | Best Interior Designers | RS Interiors" />
+        <meta property="og:description" content="RS Interiors is the leading interior designer in Hyderabad for WPC Interiors, WPVC wardrobes, PVC cupboards, and modular kitchens. 500+ projects completed." />
         <meta property="og:image" content="https://www.rsinteriordesigns.in/src/assets/logo.png" />
         <meta property="og:site_name" content="RS Interiors" />
         <meta property="og:locale" content="en_IN" />
@@ -117,8 +117,8 @@ export default function Home(){
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:url" content="https://www.rsinteriordesigns.in/" />
-        <meta name="twitter:title" content="Best Interior Designers Hyderabad | PVC Interiors, WPC Wardrobes & Modular Kitchen | RS Interiors" />
-        <meta name="twitter:description" content="RS Interiors is the best interior designer in Hyderabad for PVC interiors, WPC wardrobes, modular kitchens, and luxury home interiors." />
+        <meta name="twitter:title" content="WPC Interiors Hyderabad | Best Interior Designers | RS Interiors" />
+        <meta name="twitter:description" content="RS Interiors is the leading interior designer in Hyderabad for WPC Interiors, WPVC wardrobes, PVC cupboards, and modular kitchens." />
         <meta name="twitter:image" content="https://www.rsinteriordesigns.in/src/assets/logo.png" />
       </Helmet>
       

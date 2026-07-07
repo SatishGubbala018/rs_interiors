@@ -10,15 +10,16 @@ export default function ContactUs() {
   return (
     <>
       <Helmet>
-        <title>Contact Us | Interior Designers Hyderabad - RS Interiors PVC & WPVC</title>
+        <title>Contact RS Interiors Hyderabad | PVC & WPVC Interior Designers</title>
         <meta name="description" content="Contact RS Interiors, the best interior designer in Hyderabad, for premium PVC cupboards, WPVC wardrobes, modular kitchens, and luxury home interiors. Call +919640400030 for free consultation. Affordable interior design solutions in Telangana." />
+        <meta name="keywords" content="Contact RS Interiors Hyderabad, Best Interior Designers Hyderabad, Interior Designers Hyderabad, PVC Cupboards Hyderabad, WPVC Wardrobes Hyderabad, RS Interiors Hyderabad, Modular Kitchen Hyderabad" />
         <link rel="canonical" href="https://www.rsinteriordesigns.in/contact" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.rsinteriordesigns.in/contact" />
-        <meta property="og:title" content="Contact Us | Best Interior Designers Hyderabad - RS Interiors PVC & WPVC" />
+        <meta property="og:title" content="Contact RS Interiors Hyderabad | PVC & WPVC Interior Designers" />
         <meta property="og:description" content="Contact RS Interiors, the best interior designer in Hyderabad, for PVC cupboards, modular kitchens, wardrobes, and home interior design services. Call +919640400030." />
         <meta property="og:image" content="https://www.rsinteriordesigns.in/src/assets/logo.png" />
         <meta property="og:site_name" content="RS Interiors" />
@@ -27,13 +28,13 @@ export default function ContactUs() {
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:url" content="https://www.rsinteriordesigns.in/contact" />
-        <meta name="twitter:title" content="Contact Us | Best Interior Designers Hyderabad - RS Interiors PVC & WPVC" />
+        <meta name="twitter:title" content="Contact RS Interiors Hyderabad | PVC & WPVC Interior Designers" />
         <meta name="twitter:description" content="Contact RS Interiors, the best interior designer in Hyderabad, for PVC cupboards, modular kitchens, wardrobes, and home interior design services." />
         <meta name="twitter:image" content="https://www.rsinteriordesigns.in/src/assets/logo.png" />
       </Helmet>
       
       <section className="page contact-page">
-        <h1>Contact - RS Interiors PVC & WPVC</h1>
+        <h1>Contact - RS Interiors PVC & WPC</h1>
         <p className="lead">Contact RS Interiors, the <span className="seo-keyword">best interior designer in Hyderabad</span> for <span className="seo-keyword">PVC cupboards</span>, <span className="seo-keyword">WPVC wardrobes</span>, and modular kitchens. Reach us instantly through WhatsApp, Gmail, or Instagram for free consultation.</p>
 
         <div className="contact-options">

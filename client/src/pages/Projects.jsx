@@ -310,16 +310,17 @@ export default function Projects() {
   return (
     <>
       <Helmet>
-        <title>Our Projects | Best Interior Designers Hyderabad - RS Interiors Portfolio</title>
-        <meta name="description" content="Explore 500+ interior design projects by RS Interiors, the best interior designer in Hyderabad. View our portfolio of PVC cupboards, WPVC wardrobes, modular kitchens, and luxury home interiors. 98% customer satisfaction across Telangana." />
+        <title>Interior Design Projects Hyderabad | RS Interiors Portfolio</title>
+        <meta name="description" content="Explore 500+ interior design projects by RS Interiors in Hyderabad. View our portfolio of PVC cupboards, WPVC wardrobes, modular kitchens, and luxury home interiors. 98% customer satisfaction." />
+        <meta name="keywords" content="Interior Design Projects Hyderabad, RS Interiors Hyderabad, PVC Cupboards Hyderabad, WPVC Wardrobes Hyderabad, Modular Kitchen Hyderabad, Best Interior Designers Hyderabad" />
         <link rel="canonical" href="https://www.rsinteriordesigns.in/projects" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.rsinteriordesigns.in/projects" />
-        <meta property="og:title" content="Our Projects | Best Interior Designers Hyderabad - RS Interiors Portfolio" />
-        <meta property="og:description" content="Explore 500+ interior design projects by RS Interiors, the best interior designer in Hyderabad. PVC cupboards, WPVC wardrobes, modular kitchens, and luxury home interiors." />
+        <meta property="og:title" content="Interior Design Projects Hyderabad | RS Interiors Portfolio" />
+        <meta property="og:description" content="Explore 500+ interior design projects by RS Interiors in Hyderabad. PVC cupboards, WPVC wardrobes, modular kitchens, and luxury home interiors." />
         <meta property="og:image" content="https://www.rsinteriordesigns.in/src/assets/logo.png" />
         <meta property="og:site_name" content="RS Interiors" />
         <meta property="og:locale" content="en_IN" />
@@ -327,8 +328,8 @@ export default function Projects() {
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:url" content="https://www.rsinteriordesigns.in/projects" />
-        <meta name="twitter:title" content="Our Projects | Best Interior Designers Hyderabad - RS Interiors Portfolio" />
-        <meta name="twitter:description" content="Explore 500+ interior design projects by RS Interiors, the best interior designer in Hyderabad. PVC cupboards, WPVC wardrobes, modular kitchens." />
+        <meta name="twitter:title" content="Interior Design Projects Hyderabad | RS Interiors Portfolio" />
+        <meta name="twitter:description" content="Explore 500+ interior design projects by RS Interiors in Hyderabad. PVC cupboards, WPVC wardrobes, modular kitchens." />
         <meta name="twitter:image" content="https://www.rsinteriordesigns.in/src/assets/logo.png" />
       </Helmet>
 
