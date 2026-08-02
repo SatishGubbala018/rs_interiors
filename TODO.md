@@ -1,26 +1,27 @@
-# Reviews Feature Implementation
+# Connecting Render Backend + Vercel Frontend
 
-## Backend Setup
-- [x] Create `server/package.json` with dependencies
-- [x] Create `server/index.js` - Express server entry
-- [x] Create `server/models/Review.js` - Mongoose schema
-- [x] Create `server/routes/reviews.js` - API routes
-- [x] Create `server/.env` - MongoDB connection string
+## Config Files
+- [x] Create `client/.env.example` documenting `VITE_API_URL`
+- [x] Create `client/.env.production` with Render URL baked into production build
+- [x] Update `client/.gitignore` so `client/.env.production` is committed (public, non-secret)
 
-## Frontend Updates
-- [x] Update `ContactUs.jsx` - Add review submission form
-- [x] Update `Home.jsx` - Fetch & display reviews dynamically
-- [x] Update `styles.css` - Review form & star rating styles
+## Backend (Render) Hardening
+- [x] Harden CORS in `server/index.js` via configurable `CORS_ORIGIN` env var (dev still allows all)
+- [x] Verify server syntax (`node --check index.js`)
 
-## MongoDB Connection Fix
-- [x] Diagnose real connection error (SSL alert 80 → IP not whitelisted in Atlas)
-- [x] Add bounded connection timeout + surface real error in `server/index.js`
-- [x] Add `server/dbState.js` shared DB state
-- [x] Add in-memory fallback in `server/routes/reviews.js` (app works without Mongo)
-- [x] Health check reports DB status (`/api/health`)
+## Documentation
+- [x] Create `DEPLOYMENT.md` with step-by-step Render + Vercel + MongoDB Atlas setup
+- [x] Update `README.md` with "Connecting Frontend & Backend" section
 
-## Installation & Testing
-- [ ] Install server dependencies
-- [ ] Start server and verify MongoDB connection
-- [ ] Test review submission and display
-- [ ] Whitelist current IP `163.223.48.191` in Atlas Network Access (or add `0.0.0.0/0` for dev) → then restart server to switch from memory to MongoDB
+## Build & Connectivity Verification
+- [x] Client production build succeeds (`npm run build`)
+- [x] `VITE_API_URL=https://rs-interiors-server.onrender.com` confirmed baked into `dist` bundle
+- [x] Backend reachable — `GET /api/health` returns `{ "status": "ok", "db": "fallback-memory" }`
+
+## Dashboard Steps (manual, documented in DEPLOYMENT.md)
+- [ ] Render: set `MONGODB_URI` so `/api/health` reports `db: connected`
+- [ ] Render: set `CORS_ORIGIN=https://rsinteriordesigns.in,https://www.rsinteriordesigns.in`
+- [ ] MongoDB Atlas: whitelist `0.0.0.0/0` in Network Access
+- [ ] Vercel: confirm `VITE_API_URL=https://rs-interiors-server.onrender.com` (Production env) and redeploy
+- [ ] Verify reviews load + review submission works on the live site
+

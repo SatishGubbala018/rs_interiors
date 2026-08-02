@@ -6,9 +6,12 @@ dist/
 dist-ssr/
 
 # Environment variables
+# NOTE: .env.production is intentionally committed so Vercel / production
+# builds bake in the public Render backend URL (no secrets in it).
 .env
 .env.*
 !.env.example
+!.env.production
 
 # Logs
 logs/
