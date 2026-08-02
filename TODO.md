@@ -13,6 +13,12 @@
 - [x] Create `DEPLOYMENT.md` with step-by-step Render + Vercel + MongoDB Atlas setup
 - [x] Update `README.md` with "Connecting Frontend & Backend" section
 
+## Remove Dummy Review Data
+- [x] Removed 3 hardcoded seed reviews from `server/dbState.js` (`memoryReviews` now starts empty)
+- [x] Verified no dummy review names remain anywhere in `server/**/*.js`
+- [x] Server syntax check passes; `memoryReviews.length === 0` confirmed
+- [ ] Redeploy backend to Render so the running service picks up the empty store
+
 ## Build & Connectivity Verification
 - [x] Client production build succeeds (`npm run build`)
 - [x] `VITE_API_URL=https://rs-interiors-server.onrender.com` confirmed baked into `dist` bundle
