@@ -2,6 +2,7 @@ import React, { useEffect, useMemo, useState } from 'react'
 import { Helmet } from 'react-helmet-async'
 import useReveal from '../hooks/useReveal'
 import DMACSection from '../components/DMACSection'
+import Reviews from '../components/Reviews'
 import { Link } from 'react-router-dom'
 import { FaClock, FaHandshake, FaHammer, FaShieldAlt } from 'react-icons/fa'
 
@@ -293,7 +294,7 @@ export default function Home(){
         </div>
       </div>
 
-      
+      <Reviews />
 
       <div className="stats-section" ref={statsRef}>
         <div className="stats-row" aria-label="RS Interiors company highlights">
