@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import { Helmet, HelmetProvider } from 'react-helmet-async'
+import axios from 'axios'
 import NavBar from './components/NavBar'
 import Home from './pages/Home'
 import Products from './pages/Products'
@@ -9,6 +10,8 @@ import ContactUs from './pages/ContactUs'
 import About from './pages/About'
 import ProductDetails from './pages/ProductDetails'
 import AdditionalServices from './pages/AdditionalServices'
+
+const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:5000'
 
 const BASE_URL = 'https://www.rsinteriordesigns.in'
 
@@ -133,7 +136,32 @@ function getSeoData(pathname) {
 
 export default function App() {
   const seo = getSeoData(window.location.pathname)
-  
+
+  // ✅ Global MongoDB connection check — logs once on app mount
+  useEffect(() => {
+    const checkDb = async () => {
+      try {
+        const { data } = await axios.get(`${API_BASE}/api/health`)
+        const isMongo = data?.db === 'connected'
+        console.log(
+          `%c[MongoDB Check] %cBackend health: %c${isMongo ? 'MONGODB CONNECTED ✅ (data coming from MongoDB)' : 'FALLBACK MEMORY ⚠️ (MongoDB NOT connected)'}`,
+          'color:#2563eb;font-weight:bold',
+          'color:#111827',
+          isMongo ? 'color:#16a34a;font-weight:bold' : 'color:#f59e0b;font-weight:bold'
+        )
+        console.log('[MongoDB Check] Health response:', data)
+      } catch (err) {
+        console.error(
+          `%c[MongoDB Check] %c✖ Cannot reach backend at ${API_BASE}/api/health — MongoDB data will NOT load.`,
+          'color:#2563eb;font-weight:bold',
+          'color:#dc2626;font-weight:bold'
+        )
+        console.error('[MongoDB Check] Error:', err.message)
+      }
+    }
+    checkDb()
+  }, [])
+
   return (
     <HelmetProvider>
       <div className="app-root">

@@ -51,9 +51,28 @@ export default function Reviews() {
 
       if (response.data.success) {
         setReviews(response.data.data)
+
+        // ✅ Console log: show whether MongoDB data is coming through or not
+        const isMongo = response.data.source === 'mongodb'
+        console.log(
+          `%c[MongoDB Check] %cReviews API responded: %c${isMongo ? 'MONGODB ✅ (data coming from MongoDB)' : 'IN-MEMORY ⚠️ (MongoDB NOT connected — using fallback)'}`,
+          'color:#2563eb;font-weight:bold',
+          'color:#111827',
+          isMongo ? 'color:#16a34a;font-weight:bold' : 'color:#f59e0b;font-weight:bold'
+        )
+        console.log('[MongoDB Check] Source:', response.data.source)
+        console.log('[MongoDB Check] Review count received:', response.data.count)
+        console.log('[MongoDB Check] Sample data:', response.data.data.slice(0, 3))
+      } else {
+        console.warn('[MongoDB Check] Reviews API returned success: false', response.data)
       }
     } catch (err) {
       console.error('Error fetching reviews:', err)
+      console.error(
+        `%c[MongoDB Check] %c✖ FAILED — MongoDB data is NOT coming through. Is the backend running at ${API_BASE}?`,
+        'color:#2563eb;font-weight:bold',
+        'color:#dc2626;font-weight:bold'
+      )
       setError('Unable to load reviews. Please try again later.')
     } finally {
       setLoading(false)

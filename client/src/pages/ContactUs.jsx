@@ -41,11 +41,22 @@ export default function ContactUs() {
 
     setSubmitting(true)
     try {
-      await axios.post(`${API_BASE}/api/reviews`, {
+      const response = await axios.post(`${API_BASE}/api/reviews`, {
         name: formData.name.trim(),
         rating: formData.rating,
         review: formData.review.trim()
       })
+
+      // ✅ Console log: show where the submitted review was saved
+      const savedSource = response.data?.source === 'mongodb' ? 'MONGODB ✅' : 'IN-MEMORY ⚠️'
+      console.log(
+        `%c[MongoDB Check] %cReview submitted successfully — saved to: %c${savedSource}`,
+        'color:#2563eb;font-weight:bold',
+        'color:#111827',
+        response.data?.source === 'mongodb' ? 'color:#16a34a;font-weight:bold' : 'color:#f59e0b;font-weight:bold'
+      )
+      console.log('[MongoDB Check] Submitted review data:', response.data?.data)
+
       setSubmitMsg({ type: 'success', text: 'Thank you! Your review has been submitted successfully.' })
       setFormData({ name: '', rating: 0, review: '' })
     } catch (err) {
