@@ -123,7 +123,7 @@ export default function ContactUs() {
             <b>Mobile:</b> <a className="contact-num" href="tel:9640400030">+919640400030</a>
           </div>
           <div className="contact-fallback__item">
-            <b>Mobile:</b> <a className="contact-num" href="tel:+1768000001556">+91768000001556</a>
+            <b>Mobile:</b> <a className="contact-num" href="tel:7680001556">+917680001556</a>
           </div>
         </div>
 
